@@ -124,6 +124,30 @@
 
 
 /*
+ * Lock Screen 
+ */
+
+#lock-screen {
+	display: none;
+	height: 100%;
+}
+
+#lock-screen-message {
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #14A7A9;
+	opacity: 0.2;
+}
+
+#lock-screen-message img {
+	margin: 30px;
+}
+
+
+/*
  * Cover slide 
  */
 

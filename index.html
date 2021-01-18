@@ -18,2265 +18,2274 @@
 	</style>
 	<body>
 		<div class="reveal enigma">
-			<div class="slides">
-
-				<section id="cover" data-background-color="#14A7A9">
-
-					<div class="slide-content">
-							<div class="author">
-								<p class="name">Mitch Negus</p>
-								<p class="position">PhD Candidate</p>
-								<p class="institution">UC Berkeley, Dept. of Nuclear Engineering</p>
-							</div>
-							<div class="title">
-								<h1>No Data, No Problem</h1>
-								<h3>Giving nuclear inspectors better tools<br>without revealing state secrets</h3>
-							</div>
-							<div class="footer">
-								<img id="homepage-logo" src="img/enigma/wordmark-white.png" alt="Enigma logo" style="width: 30%; height: auto;">
-								<div class="baseline">
-									<p class="baseline-element"></p>
-									<p class="baseline-element online-note"> 
-										View these slides online at <a href="https://www.mitchnegus.com/enigma2021">www.mitchnegus.com/enigma2021</a>
-									</p>
-									<p class="baseline-element release-number">SAND2021-0391 C</p>
+			<div id="lock-screen">
+				<div id="lock-screen-message">
+					<img src="img/lock-screen/lock.png">
+					This presentation is locked until&nbsp <span id="release-date"></span>.
+				</div>
+			</div>
+			<div id="locked">
+				<div class="slides">
+	
+					<section id="cover" data-background-color="#14A7A9">
+	
+						<div class="slide-content">
+								<div class="author">
+									<p class="name">Mitch Negus</p>
+									<p class="position">PhD Candidate</p>
+									<p class="institution">UC Berkeley, Dept. of Nuclear Engineering</p>
+								</div>
+								<div class="title">
+									<h1>No Data, No Problem</h1>
+									<h3>Giving nuclear inspectors better tools<br>without revealing state secrets</h3>
+								</div>
+								<div class="footer">
+									<img id="homepage-logo" src="img/enigma/wordmark-white.png" alt="Enigma logo" style="width: 30%; height: auto;">
+									<div class="baseline">
+										<p class="baseline-element"></p>
+										<p class="baseline-element online-note"> 
+											View these slides online at <a href="https://www.mitchnegus.com/enigma2021">www.mitchnegus.com/enigma2021</a>
+										</p>
+										<p class="baseline-element release-number">SAND2021-0391 C</p>
+									</div>
 								</div>
 							</div>
-						</div>
+						</section>
+	
 					</section>
-
-				</section>
-
-				<section id="opening" data-background-color="black">
-
-					<section></section>
-
-					<section data-background-image="img/wtc-911/wtc-911.png">
-						<aside class="notes">
-							<p>
-								20 years ago this September, two planes flew into the Twin Towers in New York City.
-							</p>
-						</aside>
+	
+					<section id="opening" data-background-color="black">
+	
+						<section></section>
+	
+						<section data-background-image="img/wtc-911/wtc-911.png">
+							<aside class="notes">
+								<p>
+									20 years ago this September, two planes flew into the Twin Towers in New York City.
+								</p>
+							</aside>
+						</section>
+	
+						<section></section>
+	
+						<section data-background-image="img/boston-marathon-bombing/boston-marathon-explosions.png">
+							<aside class="notes">
+								<p>
+									Almost 8 years ago, two homemade bombs were detonated at the finish line of the Boston Marathon—only a bit more than 26.2 miles away from my front door.
+								</p>
+							</aside>
+						</section>
+	
+						<section>
+							<aside class="notes">
+								<p>
+									Both of these events were horrible acts of terrorism, but we're tremendously fortunate that neither involved a nuclear explosive.
+								</p>
+							</aside>
+						</section>
+	
+						<section data-background-image="img/nuclear-explosion/castle-romeo.png">
+							<aside class="notes">
+								<p>
+									In fact, we've never had an act of nuclear terrorism, and a big part of that is due to international cooperation to safeguard the incredibly potent nuclear materials at the heart of these weapons.
+								</p>
+							</aside>
+						</section>
+	
 					</section>
-
-					<section></section>
-
-					<section data-background-image="img/boston-marathon-bombing/boston-marathon-explosions.png">
-						<aside class="notes">
-							<p>
-								Almost 8 years ago, two homemade bombs were detonated at the finish line of the Boston Marathon—only a bit more than 26.2 miles away from my front door.
-							</p>
-						</aside>
-					</section>
-
-					<section>
-						<aside class="notes">
-							<p>
-								Both of these events were horrible acts of terrorism, but we're tremendously fortunate that neither involved a nuclear explosive.
-							</p>
-						</aside>
-					</section>
-
-					<section data-background-image="img/nuclear-explosion/castle-romeo.png">
-						<aside class="notes">
-							<p>
-								In fact, we've never had an act of nuclear terrorism, and a big part of that is due to international cooperation to safeguard the incredibly potent nuclear materials at the heart of these weapons.
-							</p>
-						</aside>
-					</section>
-
-				</section>
-						
-				<section id="inspectors">
-					<div class="slide-content">
-						<h5>Nuclear inspectors prevent material from being diverted to weapons purposes.</h5>
-						<div class="inspector-images">
-							<img src="img/iaea/inspectors.jpg" alt="IAEA inspectors"> 
-							<img src="img/iaea/mass-spec.jpg" alt="IAEA inspectors"> 
-						</div>
-					</div>
-					<aside class="notes">
-						<p>
-							But even though a <em>nuclear</em> terror catastrophe has never occurred, we can't stop being vigilant. 
-							The role of inspectors from the International Atomic Energy Agency (the IAEA) is always to stay ahead of those looking to divert and misuse nuclear material, for whatever sinister purposes they can come up with (not just nukes, but also things like dirty bombs).
-						</p>
-					</aside>
-				</section>
-
-				<section id="iaea" data-background-image="img/iaea/iaea-hq_orig.jpg" data-background-opacity="0.2">
-					<img src="img/iaea/iaea-logo.svg" id="iaea-logo" alt="IAEA logo"> 
-					<aside class="notes">
-						<p>
-							Most of the time this is straightforward—treaties and agreements with the IAEA dictate who, what, where, and when the IAEA can inspect.
-							States that do not comply with these rules risk running afoul of international law, like the Treaty on the Non-Proliferation of Nuclear Weapons. 
-						</p>
-					</aside>
-				</section>
-
-				<section id="npt" data-background-image="img/iaea/iaea-hq_orig.jpg" data-background-opacity="0.2">
-					<h5>The Treaty on the Non-Proliferation of Nuclear Weapons</h5>
-					<a href="https://en.wikipedia.org/wiki/Treaty_on_the_Non-Proliferation_of_Nuclear_Weapons#/media/File:NPT_parties.svg">
-						<img src="img/npt/npt-status.png" id="signatory-map" alt="States parties to the NPT">
-					</a>
-					<img src="img/npt/npt-status-legend.png" id="signatory-map-legend" alt="States parties to the NPT">
-					<aside class="notes">
-						<p>
-							All but 4 countries have signed the treaty, and on this map, they are shaded in red.
-							Signatories possessing nuclear weapons are shaded in blue, and those without are shaded in green.
-						</p>
-						<p>
-							For better or worse, as sophisticated data analytics become ubiquitous, it is anticipated that States will be increasingly reluctant to share anything more than the minimum amount of information that is required under their safeguards agreement with the IAEA.
-							This is not generally because they intend to act illegally or make a nuclear weapon, but rather because they wish to protect proprietary business advantages, or sensitive State information.
 							
-							Still, while these protective stances aren't necessarily a bad thing when it comes to individual national security (for the vast majority of states, at least), they may pose an impediment to the IAEA detecting a diversion somewhere... and <em>that</em> could lead to catastrophe.
-						</p>
-					</aside>
-				</section>
-						
-				<section id="mpc" data-background-color="#14A7A9">
-
-					<section data-auto-animate>
-
-						<div class="venn-diagram fragment">
-							<div class="circle" data-id="privacy-circle">
-								<div>Privacy</div>
-							</div>
-						</div> 
-
-						<aside class="notes">
-							<p>
-								So can we devise a system that appeases both parties?
-								One that lets states retain high levels of privacy, while IAEA inspectors can be notified about real deviations from expected practice?
-							</p>
-						</aside>
-
-					</section>
-
-					<section data-auto-animate>
-
-						<div class="venn-diagram separated">
-							<div class="circle" data-id="privacy-circle">
-								<div>Privacy</div>
-							</div>
-							<div class="circle" data-id="security-circle">
-								<div>Security</div>
-							</div>
-						</div> 
-
-						<aside class="notes">
-							<p>
-								So can we devise a system that appeases both parties?
-								One that lets states retain high levels of privacy, while IAEA inspectors can be notified about real deviations from expected practice?
-							</p>
-						</aside>
-
-					</section>
-
-					<section data-auto-animate>
-
-						<div class="venn-diagram">
-							<div class="circle left" data-id="privacy-circle">
-								<div>Privacy</div>
-							</div>
-							<div class="circle right" data-id="security-circle">
-								<div>Security</div>
+					<section id="inspectors">
+						<div class="slide-content">
+							<h5>Nuclear inspectors prevent material from being diverted to weapons purposes.</h5>
+							<div class="inspector-images">
+								<img src="img/iaea/inspectors.jpg" alt="IAEA inspectors"> 
+								<img src="img/iaea/mass-spec.jpg" alt="IAEA inspectors"> 
 							</div>
 						</div>
-
-						<aside/ class="notes">
-							<p>
-								Well, we're looking at the intersection of privacy and security, where the cryptographic subfield of secure multiparty computation becomes applicable.
-							</p>
-						</aside>
-
-					</section>
-
-					<section data-auto-animate>
-
-						<div class="venn-diagram raised">
-							<div class="circle left small" data-id="privacy-circle">
-							</div>
-							<div class="circle right small" data-id="security-circle">
-							</div>
-						</div>
-
-						<p>Secure Multiparty Computation</p>
-
 						<aside class="notes">
 							<p>
-								If you aren't familiar with the field, secure multiparty computation–or MPC for short–allows two or more parties to jointly compute some function of all of their inputs together, while none of the parties learns anything about the input of any other party beyond what's implied by the result.
-								It sounds a bit like magic, but I assure you, it's computationally sound.
+								But even though a <em>nuclear</em> terror catastrophe has never occurred, we can't stop being vigilant. 
+								The role of inspectors from the International Atomic Energy Agency (the IAEA) is always to stay ahead of those looking to divert and misuse nuclear material, for whatever sinister purposes they can come up with (not just nukes, but also things like dirty bombs).
 							</p>
 						</aside>
-
 					</section>
-
-					<section data-auto-animate>
-
-						<div class="venn-diagram raised">
-							<div class="circle left small" data-id="privacy-circle">
-							</div>
-							<div class="circle right small" data-id="security-circle">
-							</div>
-						</div>
-
-						<p>Secure Multiparty Computation</p>
-						<h1>MPC</h1>
-
+	
+					<section id="iaea" data-background-image="img/iaea/iaea-hq_orig.jpg" data-background-opacity="0.2">
+						<img src="img/iaea/iaea-logo.svg" id="iaea-logo" alt="IAEA logo"> 
 						<aside class="notes">
 							<p>
-								If you aren't familiar with the field, secure multiparty computation–or MPC for short–allows two or more parties to jointly compute some function of all of their inputs together, while none of the parties learns anything about the input of any other party beyond what's implied by the result.
-								It sounds a bit like magic, but I assure you, it's computationally sound.
+								Most of the time this is straightforward—treaties and agreements with the IAEA dictate who, what, where, and when the IAEA can inspect.
+								States that do not comply with these rules risk running afoul of international law, like the Treaty on the Non-Proliferation of Nuclear Weapons. 
 							</p>
 						</aside>
-
 					</section>
-
-				</section>
-
-
-				<section id="mpc-history">
-					<h1>A Brief History of MPC</h1>	
-					<div class="r-stack">
-						<img src="img/ppc-timeline/timeline-stage0.png" alt="MPC timeline (blank)">
-						<img src="img/ppc-timeline/timeline-stage1.png" class="fragment" alt="MPC timeline (early)">
-						<img src="img/ppc-timeline/timeline-stage2.png" class="fragment" alt="MPC timeline (middle)">
-						<img src="img/ppc-timeline/timeline-stage3.png" class="fragment" alt="MPC timeline (late)">
-					</div>
-					<aside class="notes">
-						<p>
-							The idea of MPC has its roots in the late 1970s and early 1980s, and I'll largely be focusing here on one class of MPC algorithms called garbled circuits—credited to cryptographer Andrew Yao in the 1980s.
-						</p>
-						<p>
-							Yao presented what he called the millionaire's problem.
-							Two millionaires go out to dinner, agreeing that the richer one covers the meal.
-							Neither wishes to disclose their true net worth, so they devise an algorithm to indicate who's paying and nothing else.
-						</p>
-						<p>
-							There was more formulation and mathematical theory that was developed through the 1990s, and by the early 2000s software was being written to actually implement these MPC algorithms.
-							As computing power has grown, the abilities of software implementations have grown with them, with MPC really only entering the scene as a practical technology in the past decade.
-							A couple examples are privacy-preserving cryptocurrencies like Zcash, or an anonymous study on gender wage gaps by Boston University in 2015.
-							Covid-19 contact tracing has recently spiked interest in these algorithms too.
-						</p>
-						<p>
-							With all this development, we decided to try applying MPC to our safeguards problem.
-						</p>
-					</aside>
-				</section>
-						
-				<section class="big-questions">
-					<div class="question fragment" data-fragment-index="1">
-						<div class="fragment grow" data-fragment-index="4">
+	
+					<section id="npt" data-background-image="img/iaea/iaea-hq_orig.jpg" data-background-opacity="0.2">
+						<h5>The Treaty on the Non-Proliferation of Nuclear Weapons</h5>
+						<a href="https://en.wikipedia.org/wiki/Treaty_on_the_Non-Proliferation_of_Nuclear_Weapons#/media/File:NPT_parties.svg">
+							<img src="img/npt/npt-status.png" id="signatory-map" alt="States parties to the NPT">
+						</a>
+						<img src="img/npt/npt-status-legend.png" id="signatory-map-legend" alt="States parties to the NPT">
+						<aside class="notes">
+							<p>
+								All but 4 countries have signed the treaty, and on this map, they are shaded in red.
+								Signatories possessing nuclear weapons are shaded in blue, and those without are shaded in green.
+							</p>
+							<p>
+								For better or worse, as sophisticated data analytics become ubiquitous, it is anticipated that States will be increasingly reluctant to share anything more than the minimum amount of information that is required under their safeguards agreement with the IAEA.
+								This is not generally because they intend to act illegally or make a nuclear weapon, but rather because they wish to protect proprietary business advantages, or sensitive State information.
+								
+								Still, while these protective stances aren't necessarily a bad thing when it comes to individual national security (for the vast majority of states, at least), they may pose an impediment to the IAEA detecting a diversion somewhere... and <em>that</em> could lead to catastrophe.
+							</p>
+						</aside>
+					</section>
+							
+					<section id="mpc" data-background-color="#14A7A9">
+	
+						<section data-auto-animate>
+	
+							<div class="venn-diagram fragment">
+								<div class="circle" data-id="privacy-circle">
+									<div>Privacy</div>
+								</div>
+							</div> 
+	
+							<aside class="notes">
+								<p>
+									So can we devise a system that appeases both parties?
+									One that lets states retain high levels of privacy, while IAEA inspectors can be notified about real deviations from expected practice?
+								</p>
+							</aside>
+	
+						</section>
+	
+						<section data-auto-animate>
+	
+							<div class="venn-diagram separated">
+								<div class="circle" data-id="privacy-circle">
+									<div>Privacy</div>
+								</div>
+								<div class="circle" data-id="security-circle">
+									<div>Security</div>
+								</div>
+							</div> 
+	
+							<aside class="notes">
+								<p>
+									So can we devise a system that appeases both parties?
+									One that lets states retain high levels of privacy, while IAEA inspectors can be notified about real deviations from expected practice?
+								</p>
+							</aside>
+	
+						</section>
+	
+						<section data-auto-animate>
+	
+							<div class="venn-diagram">
+								<div class="circle left" data-id="privacy-circle">
+									<div>Privacy</div>
+								</div>
+								<div class="circle right" data-id="security-circle">
+									<div>Security</div>
+								</div>
+							</div>
+	
+							<aside/ class="notes">
+								<p>
+									Well, we're looking at the intersection of privacy and security, where the cryptographic subfield of secure multiparty computation becomes applicable.
+								</p>
+							</aside>
+	
+						</section>
+	
+						<section data-auto-animate>
+	
+							<div class="venn-diagram raised">
+								<div class="circle left small" data-id="privacy-circle">
+								</div>
+								<div class="circle right small" data-id="security-circle">
+								</div>
+							</div>
+	
+							<p>Secure Multiparty Computation</p>
+	
+							<aside class="notes">
+								<p>
+									If you aren't familiar with the field, secure multiparty computation–or MPC for short–allows two or more parties to jointly compute some function of all of their inputs together, while none of the parties learns anything about the input of any other party beyond what's implied by the result.
+									It sounds a bit like magic, but I assure you, it's computationally sound.
+								</p>
+							</aside>
+	
+						</section>
+	
+						<section data-auto-animate>
+	
+							<div class="venn-diagram raised">
+								<div class="circle left small" data-id="privacy-circle">
+								</div>
+								<div class="circle right small" data-id="security-circle">
+								</div>
+							</div>
+	
+							<p>Secure Multiparty Computation</p>
+							<h1>MPC</h1>
+	
+							<aside class="notes">
+								<p>
+									If you aren't familiar with the field, secure multiparty computation–or MPC for short–allows two or more parties to jointly compute some function of all of their inputs together, while none of the parties learns anything about the input of any other party beyond what's implied by the result.
+									It sounds a bit like magic, but I assure you, it's computationally sound.
+								</p>
+							</aside>
+	
+						</section>
+	
+					</section>
+	
+	
+					<section id="mpc-history">
+						<h1>A Brief History of MPC</h1>	
+						<div class="r-stack">
+							<img src="img/ppc-timeline/timeline-stage0.png" alt="MPC timeline (blank)">
+							<img src="img/ppc-timeline/timeline-stage1.png" class="fragment" alt="MPC timeline (early)">
+							<img src="img/ppc-timeline/timeline-stage2.png" class="fragment" alt="MPC timeline (middle)">
+							<img src="img/ppc-timeline/timeline-stage3.png" class="fragment" alt="MPC timeline (late)">
+						</div>
+						<aside class="notes">
+							<p>
+								The idea of MPC has its roots in the late 1970s and early 1980s, and I'll largely be focusing here on one class of MPC algorithms called garbled circuits—credited to cryptographer Andrew Yao in the 1980s.
+							</p>
+							<p>
+								Yao presented what he called the millionaire's problem.
+								Two millionaires go out to dinner, agreeing that the richer one covers the meal.
+								Neither wishes to disclose their true net worth, so they devise an algorithm to indicate who's paying and nothing else.
+							</p>
+							<p>
+								There was more formulation and mathematical theory that was developed through the 1990s, and by the early 2000s software was being written to actually implement these MPC algorithms.
+								As computing power has grown, the abilities of software implementations have grown with them, with MPC really only entering the scene as a practical technology in the past decade.
+								A couple examples are privacy-preserving cryptocurrencies like Zcash, or an anonymous study on gender wage gaps by Boston University in 2015.
+								Covid-19 contact tracing has recently spiked interest in these algorithms too.
+							</p>
+							<p>
+								With all this development, we decided to try applying MPC to our safeguards problem.
+							</p>
+						</aside>
+					</section>
+							
+					<section class="big-questions">
+						<div class="question fragment" data-fragment-index="1">
+							<div class="fragment grow" data-fragment-index="4">
+								What can we <span class="highlight">DO</span>?
+							</div>
+						</div>
+						<div class="question fragment" data-fragment-index="2">
+							<div class="fragment grow" data-fragment-index="5">
+								What types of <span class="highlight">DATA</span>?
+							</div>
+						</div>
+						<div class="question fragment" data-fragment-index="3">
+							<div>
+								Why hasn't it been <span class="highlight">DEPLOYED</span>?
+							</div>
+						</div>
+	
+						<aside class="notes">
+								<p>
+									At the most basic level, we were asking the following questions:
+								</p>
+								<ul>
+									<li>What can we actually do with it? (Which specific safeguards problems would lend themselves to MPC?) </li>
+									<li>What types of data could we analyze? </li>
+									<li>And why isn't this <em>already</em> being deployed?</li>
+								</ul>
+								<p>
+								Let's start with the first question.
+								The key insight about Yao's garbled circuits (and subsequent evolutions of them) is that they can handle literally <em>any</em> calculation that might be performed by multiple parties.
+								If you can program a computer to do it, you can build a garbled circuit to do it.
+								I'll come back to this in a bit.
+								</p>
+								<p>
+									As far as what data we could use? Well, we decided that an interesting exercise would be using MPC to analyze the output of the detectors like those relied on by IAEA inspectors.
+								</p>
+						</aside>
+					</section>
+	
+					<section id="radiation-spectra">
+						<div class="slide-content">
+							<h1>Radiation Spectra</h1>
+							<div class="uranium">
+								<img src="img/gamma-spectrum/uranium-ore-gamma-spec.png" id="uranium-ore-spectrum" alt="gamma spectrum for uranium ore">
+								<img src="img/gamma-spectrum/uranium-ore/uranium-ore_orig.jpg" id="uranium-ore-sample" alt="uranium ore sample">
+							</div>
+							<p class="unit-note">keV: kiloelectronvolts</p>
+						</div>
+						<aside class="notes">
+							<p>
+								Since every radioactive isotope (think "flavor" of an element) produces a unique radiation signature, measuring these emitted radioactive particles can tell an inspector exactly how much nuclear material—and what types—are in a location.
+							</p>
+							<p>
+								This plot of the spectra produced by uranium ore serves as a good illustration. 
+								You can see the distinct spectral peaks, each one where the detector measured many radioactive particles with the same energy.
+								While none of these peaks actually correspond to the radiation from uranium itself, they come from a cocktail of radioactive particles that is really only produced in this observed ratio by uranium ore.
+							</p>
+							<p>
+								Taking this idea further, perhaps if we could "watch" the output of a detector over time, we could flag measurements with radioactive signatures for nuclear materials that are proliferation risks.
+								This is what the IAEA inspectors and data analysts already do, but with MPC we could do it obliviously–we'd learn nothing else about the material compositions that are picked up by the detector. 
+								</p>
+						</aside>
+					</section>
+							
+					<section class="big-questions">
+						<div class="question grown">
 							What can we <span class="highlight">DO</span>?
 						</div>
-					</div>
-					<div class="question fragment" data-fragment-index="2">
-						<div class="fragment grow" data-fragment-index="5">
+						<div class="question grown">
 							What types of <span class="highlight">DATA</span>?
 						</div>
-					</div>
-					<div class="question fragment" data-fragment-index="3">
-						<div>
-							Why hasn't it been <span class="highlight">DEPLOYED</span>?
+						<div class="question">
+							<div class="fragment grow">
+								Why hasn't it been <span class="highlight">DEPLOYED</span>?
+							</div>
 						</div>
-					</div>
-
-					<aside class="notes">
-							<p>
-								At the most basic level, we were asking the following questions:
-							</p>
-							<ul>
-								<li>What can we actually do with it? (Which specific safeguards problems would lend themselves to MPC?) </li>
-								<li>What types of data could we analyze? </li>
-								<li>And why isn't this <em>already</em> being deployed?</li>
-							</ul>
-							<p>
-							Let's start with the first question.
-							The key insight about Yao's garbled circuits (and subsequent evolutions of them) is that they can handle literally <em>any</em> calculation that might be performed by multiple parties.
-							If you can program a computer to do it, you can build a garbled circuit to do it.
-							I'll come back to this in a bit.
-							</p>
-							<p>
-								As far as what data we could use? Well, we decided that an interesting exercise would be using MPC to analyze the output of the detectors like those relied on by IAEA inspectors.
-							</p>
-					</aside>
-				</section>
-
-				<section id="radiation-spectra">
-					<div class="slide-content">
-						<h1>Radiation Spectra</h1>
-						<div class="uranium">
-							<img src="img/gamma-spectrum/uranium-ore-gamma-spec.png" id="uranium-ore-spectrum" alt="gamma spectrum for uranium ore">
-							<img src="img/gamma-spectrum/uranium-ore/uranium-ore_orig.jpg" id="uranium-ore-sample" alt="uranium ore sample">
-						</div>
-						<p class="unit-note">keV: kiloelectronvolts</p>
-					</div>
-					<aside class="notes">
-						<p>
-							Since every radioactive isotope (think "flavor" of an element) produces a unique radiation signature, measuring these emitted radioactive particles can tell an inspector exactly how much nuclear material—and what types—are in a location.
-						</p>
-						<p>
-							This plot of the spectra produced by uranium ore serves as a good illustration. 
-							You can see the distinct spectral peaks, each one where the detector measured many radioactive particles with the same energy.
-							While none of these peaks actually correspond to the radiation from uranium itself, they come from a cocktail of radioactive particles that is really only produced in this observed ratio by uranium ore.
-						</p>
-						<p>
-							Taking this idea further, perhaps if we could "watch" the output of a detector over time, we could flag measurements with radioactive signatures for nuclear materials that are proliferation risks.
-							This is what the IAEA inspectors and data analysts already do, but with MPC we could do it obliviously–we'd learn nothing else about the material compositions that are picked up by the detector. 
-							</p>
-					</aside>
-				</section>
-						
-				<section class="big-questions">
-					<div class="question grown">
-						What can we <span class="highlight">DO</span>?
-					</div>
-					<div class="question grown">
-						What types of <span class="highlight">DATA</span>?
-					</div>
-					<div class="question">
-						<div class="fragment grow">
-							Why hasn't it been <span class="highlight">DEPLOYED</span>?
-						</div>
-					</div>
-
-					<aside class="notes">
-						<p>
-							Which brings us back to the third question: 
-						</p>
-					</aside>
-				</section>
-						
-						
-				<section id="impediments">
-
-					<section data-auto-animate>
-						<div class="slide-content">
-
-							<p data-id="statement">MPC isn't yet used in safeguards today, due in part to:</p>
-
-						</div>
-						<aside class="notes">
-							<p>
-								Why hasn't anyone done this yet?
-							</p>
-					</section>
-
-					<section data-auto-animate>
-						<div class="slide-content">
-
-							<p data-id="statement">MPC isn't yet used in safeguards today, due in part to:</p>
-							<ol>
-								<li class="fragment">
-									<div class="bullet-image">
-										<img src="img/clock.png">
-									</div>
-									<div class="bullet-text">
-										<div class="point">Technical requirements</div>
-										<div class="info">Viable MPC is a relatively new development.</div>
-									</div>
-								</li>
-								<li class="fragment">
-									<div class="bullet-image">
-										<img src="img/caution.png">
-									</div>
-									<div class="bullet-text">
-										<div class="point">Risk-averse inspectorate</div>
-										<div class="info">Technologies must be rigorously proven, limiting reliance on the cutting edge.</div>
-									</div>
-								</li>
-								<li class="short fragment">
-									<div class="bullet-image">
-										<img src="img/atom.png">
-									</div>
-									<div class="bullet-text">
-										<div class="point">Limited pool of expertise</div>
-										<div class="info">Primary focus is on nuclear technology, so overlap with advanced cryptography is thin.</div>
-									</div>
-								</li>
-							</ol>
 	
-						</div>
 						<aside class="notes">
 							<p>
-								Well, on one hand, the technical requirements of MPC mean that only very recently have off-the-shelf computer systems been able to handle privacy-preserving computations of what would I would truly consider data-analytics.
-							</p>
-							<p>
-								Additionally, the IAEA is necessarily incredibly risk averse.
-								You can't ride the cutting edge without taking risks, and when it comes to nuclear security, losing bets are not acceptable.
-								The IAEA has to ensure that every technology put into practice is guaranteed to work.
-								Oftentimes, this also means deployed technologies are customized to be extra secure and extra resilient.
-								The IAEA's technology tends to be tried-and-true, not latest-and-greatest.
-							<p>
-								And finally, nuclear safeguards is a small field on a constrained budget.
-								The pool of expertise is pretty limited, and unlike a lot of tech fields, nuclear safeguards isn't a moneymaker.
-								That means that the technical overlap between nuclear fields and latest in cryptography is just pretty small.
-							</p>
-							<p>
-								Now, before I show you what we accomplished, I want to take a few minutes to explain how MPC actually works.
-								It's <em>super</em> cool, but I told you it wasn't magic, and so I'm going to have to back that up.
-							</p>
-							Icons: clock, caution symbol, brain
-						</aside>
-					</section>
-						
-
-				</section>
-
-				<section id="digital-circuits" data-background-color="#14A7A9">
-						
-					<p class="title fragment" data-fragment-index="1">$ A \stackrel{?}{=} B $</p>
-					<div class="container r-stack">
-						<img src="img/comparator-circuit/comparator.png" class="comparator washout fragment fade-out" data-fragment-index="1">
-						<img src="img/comparator-circuit/comparator-0.png" class="comparator fragment" data-fragment-index="1">
-						<img src="img/comparator-circuit/comparator-1.png" class="comparator fragment" data-fragment-index="2">
-						<img src="img/comparator-circuit/comparator-2.png" class="comparator fragment" data-fragment-index="3">
-						<img src="img/comparator-circuit/comparator-3.png" class="comparator fragment" data-fragment-index="4">
-						<p class="text-overlay fragment fade-in-then-out" data-fragment-index="0">Digital logic circuits can evaluate any computable function.</p>
-					</div>
-
-					<aside class="notes">
-						<p>
-							You may have learned at some point that any calculation that your computer can do can be performed using a digital logic circuit.
-							This circuit here shows a simple calculation: is bit $A$ (the circuit's input wire on the top left) greater than, less than, or equal to bit $B$ (the input wire on the bottom left)? 
-						</p>
-						<p>
-							By adding gates, the circuit can be scaled up to do almost anything.
-							Real numbers are reduced to binary, and every addition, subtraction, multiplication, division, square root, modulus, exponential, you name it, is represented using a complex system of logic gates:  NOT, AND, OR, and the like.
-						</p>
-						<p>
-							Garbled circuits build on this foundation.
-							Let's look at the two party case.
-						</p>
-					</aside>
-				</section>
-
-						
-				<section id="party-inputs" data-background-color="#14A7A9">
-
-					<section id="two-parties" data-auto-animate>
-						<div class="title"><h1 data-id="two-parties">2 Parties</h1></div>
-						<div class="info">
-							<ol>
-								<li class="fragment" data-fragment-index="1">
-									<div class="party">
-										<div class="party-name">Facility:</div><div class="symbol" data-id="facility-symbol">$F$</div>
-									</div>
-								</li>
-								<li class="fragment" data-fragment-index="2">
-									<div class="party">
-										<div class="party-name">IAEA:</div><div class="symbol" data-id="inspector-symbol">$I$</div>
-									</div>
-								</li>
-								<div class="equivalence fragment" data-id="f-equals-i">$F \stackrel{?}{=} I$</div>
-							</ol>
-						</div>
-						<aside class="notes">
-							<p>
-								To keep the focus on safeguards, we'll say one party is a nuclear facility, and the other is the IAEA.
-							</p>
-							<p>
-								Our two parties agree on a function to compute; for simplicity, let's imagine a function that tells us if the two parties have picked different numbers from just the small set of integers 0 through 3.
+								Which brings us back to the third question: 
 							</p>
 						</aside>
 					</section>
-
-					<section id="circuit-inputs" data-auto-animate>
-						<div class="title"><h1 data-id="two-parties">2 Parties</h1><div>&nbsp $\times$ &nbsp</div><h1>2 Inputs</h1></div>
-						<div class="info">
-							<ol style="list-style-type: none;">
-								<li>
-									<div class="party">
-										<div class="symbol" data-id="facility-symbol">$F$</div><div class="fragment" data-fragment-index="1">$=F_1 F_0$</div>
-									</div>
-								</li>
-								<li>
-									<div class="party">
-										<div class="symbol" data-id="inspector-symbol">$I$</div><div class="fragment" data-fragment-index="1">$\,=I_1 I_0$</div>
-									</div>
-								</li>
-								<div class="equivalence" data-id="f-equals-i">$F \stackrel{?}{=} I$</div>
-							</ol>
-							<div class="examples">
-								<div class="bracket fragment">$\{$</div>
-								<div class="binary">
-									<div class="fragment">$0 = 00_2$</div>
-									<div class="fragment">$1 = 01_2$</div>
-									<div class="fragment">$2 = 10_2$</div>
-									<div class="fragment">$3 = 11_2$</div>
-								</div>
-							</div>
-						</div>
-
-						<aside class="notes">
-							<p>
-								Since our circuit will work in binary, we convert our integer possibilities to base 2 and get 00, 01, 10, and 11.
-								We see that we have two-bit inputs for each party.
-							</p>
-						</aside>
-					</section>
-
-				</section>
-
-				<section class="equality-circuit" data-background-color="#14A7A9">
-
-					<section data-auto-animate>
-
-						<div class="slide-content">
-							<p class="fragment viewpoint" data-fragment-index="5">Facility's Viewpoint</p>
+							
+							
+					<section id="impediments">
 	
-							<div class="definitions" data-id="definitions">
-								<div class="definition">
-									$ F = F_1 F_0 $
-								</div>
-								<div class="definition">
-									$ \;I = I_1 I_0 $
-								</div>
+						<section data-auto-animate>
+							<div class="slide-content">
+	
+								<p data-id="statement">MPC isn't yet used in safeguards today, due in part to:</p>
+	
 							</div>
-
-							<div class="circuit-diagram">
-								<img src="img/equality-circuit.png" class="circuit-diagram" alt="circuit evaluating equality">
-							</div>
+							<aside class="notes">
+								<p>
+									Why hasn't anyone done this yet?
+								</p>
+						</section>
+	
+						<section data-auto-animate>
+							<div class="slide-content">
+	
+								<p data-id="statement">MPC isn't yet used in safeguards today, due in part to:</p>
+								<ol>
+									<li class="fragment">
+										<div class="bullet-image">
+											<img src="img/clock.png">
+										</div>
+										<div class="bullet-text">
+											<div class="point">Technical requirements</div>
+											<div class="info">Viable MPC is a relatively new development.</div>
+										</div>
+									</li>
+									<li class="fragment">
+										<div class="bullet-image">
+											<img src="img/caution.png">
+										</div>
+										<div class="bullet-text">
+											<div class="point">Risk-averse inspectorate</div>
+											<div class="info">Technologies must be rigorously proven, limiting reliance on the cutting edge.</div>
+										</div>
+									</li>
+									<li class="short fragment">
+										<div class="bullet-image">
+											<img src="img/atom.png">
+										</div>
+										<div class="bullet-text">
+											<div class="point">Limited pool of expertise</div>
+											<div class="info">Primary focus is on nuclear technology, so overlap with advanced cryptography is thin.</div>
+										</div>
+									</li>
+								</ol>
 		
-							<div class="wrapper fragment" data-fragment-index="4" id="tt-xor0-wrapper-highlight">
-							 <div class="wrapper fragment" data-fragment-index="11" id="tt-xor0-wrapper-unhighlight">
-							  <div class="truthtable fragment" data-fragment-index="1" id="tt-xor0" style="top: 0; left: 600px;">
-							   <div class="header row">
-							    <div class="cell" data-id="tt-xor0-header-cell0">
-							     $F_0$
-							    </div>
-							    <div class="cell" data-id="tt-xor0-header-cell1">
-							     $I_0$
-							    </div>
-							    <div class="output cell" data-id="tt-xor0-header-cell-output">
-							     $X_0$
-							    </div>
-							    <div class="encrypted cell fragment" data-fragment-index="18" data-id="tt-xor0-header-cell-encrypted">
-							     <img class="lock" src="img/lock/lock0.png"/>
-							    </div>
-							   </div>
-							   <div class="row">
-							    <div class="cell r-stack" data-id="tt-xor0-row0-cell0">
-							     <div class="fragment fade-out" data-fragment-index="5">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="5">
-							      <div class="fragment fade-out" data-fragment-index="19">
-							       6fd0
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="19">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="cell r-stack" data-id="tt-xor0-row0-cell1">
-							     <div class="fragment fade-out" data-fragment-index="7">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="7">
-							      <div class="fragment fade-out" data-fragment-index="19">
-							       32f1
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="19">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="output cell r-stack" data-id="tt-xor0-row0-cell-output">
-							     <div class="fragment fade-out" data-fragment-index="10">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="10">
-							      <div class="fragment fade-out" data-fragment-index="19">
-							       ed56
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="19">
-							      ••••
-							     </div>
-							    </div>
-							    <div class="encrypted cell fragment" data-fragment-index="18" data-id="tt-xor0-row0-cell-encrypted">
-							     <div class="fragment fade-right" data-fragment-index="19">
-							      fddd
-							     </div>
-							    </div>
-							   </div>
-							   <div class="row">
-							    <div class="cell r-stack" data-id="tt-xor0-row1-cell0">
-							     <div class="fragment fade-out" data-fragment-index="5">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="5">
-							      <div class="fragment fade-out" data-fragment-index="20">
-							       6fd0
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="20">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="cell r-stack" data-id="tt-xor0-row1-cell1">
-							     <div class="fragment fade-out" data-fragment-index="8">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="8">
-							      <div class="fragment fade-out" data-fragment-index="20">
-							       c4d4
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="20">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="output cell r-stack" data-id="tt-xor0-row1-cell-output">
-							     <div class="fragment fade-out" data-fragment-index="9">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="9">
-							      <div class="fragment fade-out" data-fragment-index="20">
-							       bd67
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="20">
-							      ••••
-							     </div>
-							    </div>
-							    <div class="encrypted cell fragment" data-fragment-index="18" data-id="tt-xor0-row1-cell-encrypted">
-							     <div class="fragment fade-right" data-fragment-index="20">
-							      ad11
-							     </div>
-							    </div>
-							   </div>
-							   <div class="row">
-							    <div class="cell r-stack" data-id="tt-xor0-row2-cell0">
-							     <div class="fragment fade-out" data-fragment-index="6">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="6">
-							      <div class="fragment fade-out" data-fragment-index="21">
-							       131b
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="21">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="cell r-stack" data-id="tt-xor0-row2-cell1">
-							     <div class="fragment fade-out" data-fragment-index="7">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="7">
-							      <div class="fragment fade-out" data-fragment-index="21">
-							       32f1
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="21">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="output cell r-stack" data-id="tt-xor0-row2-cell-output">
-							     <div class="fragment fade-out" data-fragment-index="9">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="9">
-							      <div class="fragment fade-out" data-fragment-index="21">
-							       bd67
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="21">
-							      ••••
-							     </div>
-							    </div>
-							    <div class="encrypted cell fragment" data-fragment-index="18" data-id="tt-xor0-row2-cell-encrypted">
-							     <div class="fragment fade-right" data-fragment-index="21">
-							      c2bf
-							     </div>
-							    </div>
-							   </div>
-							   <div class="row">
-							    <div class="cell r-stack" data-id="tt-xor0-row3-cell0">
-							     <div class="fragment fade-out" data-fragment-index="6">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="6">
-							      <div class="fragment fade-out" data-fragment-index="22">
-							       131b
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="22">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="cell r-stack" data-id="tt-xor0-row3-cell1">
-							     <div class="fragment fade-out" data-fragment-index="8">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="8">
-							      <div class="fragment fade-out" data-fragment-index="22">
-							       c4d4
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="22">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="output cell r-stack" data-id="tt-xor0-row3-cell-output">
-							     <div class="fragment fade-out" data-fragment-index="10">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="10">
-							      <div class="fragment fade-out" data-fragment-index="22">
-							       ed56
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="22">
-							      ••••
-							     </div>
-							    </div>
-							    <div class="encrypted cell fragment" data-fragment-index="18" data-id="tt-xor0-row3-cell-encrypted">
-							     <div class="fragment fade-right" data-fragment-index="22">
-							      4b0e
-							     </div>
-							    </div>
-							   </div>
-							  </div>
-							 </div>
 							</div>
-							<div class="wrapper fragment" data-fragment-index="12" id="tt-xor1-wrapper-highlight">
-							 <div class="wrapper fragment" data-fragment-index="14" id="tt-xor1-wrapper-unhighlight">
-							  <div class="truthtable fragment" data-fragment-index="2" id="tt-xor1" style="top: 800px; left: 600px;">
-							   <div class="header row">
-							    <div class="cell" data-id="tt-xor1-header-cell0">
-							     $F_1$
-							    </div>
-							    <div class="cell" data-id="tt-xor1-header-cell1">
-							     $I_1$
-							    </div>
-							    <div class="output cell" data-id="tt-xor1-header-cell-output">
-							     $X_1$
-							    </div>
-							    <div class="encrypted cell fragment" data-fragment-index="23" data-id="tt-xor1-header-cell-encrypted">
-							     <img class="lock" id="tt-xor1-lock" src="img/lock/lock1.png"/>
-							    </div>
-							   </div>
-							   <div class="row">
-							    <div class="cell r-stack" data-id="tt-xor1-row0-cell0">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       5e4d
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="cell r-stack" data-id="tt-xor1-row0-cell1">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       253e
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="output cell r-stack" data-id="tt-xor1-row0-cell-output">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       19b6
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      ••••
-							     </div>
-							    </div>
-							    <div class="encrypted cell fragment" data-fragment-index="23" data-id="tt-xor1-row0-cell-encrypted">
-							     <div class="fragment fade-right" data-fragment-index="24">
-							      0d14
-							     </div>
-							    </div>
-							   </div>
-							   <div class="row">
-							    <div class="cell r-stack" data-id="tt-xor1-row1-cell0">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       5e4d
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="cell r-stack" data-id="tt-xor1-row1-cell1">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       767a
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="output cell r-stack" data-id="tt-xor1-row1-cell-output">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       7d2f
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      ••••
-							     </div>
-							    </div>
-							    <div class="encrypted cell fragment" data-fragment-index="23" data-id="tt-xor1-row1-cell-encrypted">
-							     <div class="fragment fade-right" data-fragment-index="24">
-							      cd16
-							     </div>
-							    </div>
-							   </div>
-							   <div class="row">
-							    <div class="cell r-stack" data-id="tt-xor1-row2-cell0">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       41cb
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="cell r-stack" data-id="tt-xor1-row2-cell1">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       253e
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="output cell r-stack" data-id="tt-xor1-row2-cell-output">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      0
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       7d2f
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      ••••
-							     </div>
-							    </div>
-							    <div class="encrypted cell fragment" data-fragment-index="23" data-id="tt-xor1-row2-cell-encrypted">
-							     <div class="fragment fade-right" data-fragment-index="24">
-							      12cf
-							     </div>
-							    </div>
-							   </div>
-							   <div class="row">
-							    <div class="cell r-stack" data-id="tt-xor1-row3-cell0">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       41cb
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="cell r-stack" data-id="tt-xor1-row3-cell1">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       767a
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      🔑
-							     </div>
-							    </div>
-							    <div class="output cell r-stack" data-id="tt-xor1-row3-cell-output">
-							     <div class="fragment fade-out" data-fragment-index="13">
-							      1
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="13">
-							      <div class="fragment fade-out" data-fragment-index="24">
-							       19b6
-							      </div>
-							     </div>
-							     <div class="fragment fade-in" data-fragment-index="24">
-							      ••••
-							     </div>
-							    </div>
-							    <div class="encrypted cell fragment" data-fragment-index="23" data-id="tt-xor1-row3-cell-encrypted">
-							     <div class="fragment fade-right" data-fragment-index="24">
-							      6dc9
-							     </div>
-							    </div>
-							   </div>
-							  </div>
-							 </div>
+							<aside class="notes">
+								<p>
+									Well, on one hand, the technical requirements of MPC mean that only very recently have off-the-shelf computer systems been able to handle privacy-preserving computations of what would I would truly consider data-analytics.
+								</p>
+								<p>
+									Additionally, the IAEA is necessarily incredibly risk averse.
+									You can't ride the cutting edge without taking risks, and when it comes to nuclear security, losing bets are not acceptable.
+									The IAEA has to ensure that every technology put into practice is guaranteed to work.
+									Oftentimes, this also means deployed technologies are customized to be extra secure and extra resilient.
+									The IAEA's technology tends to be tried-and-true, not latest-and-greatest.
+								<p>
+									And finally, nuclear safeguards is a small field on a constrained budget.
+									The pool of expertise is pretty limited, and unlike a lot of tech fields, nuclear safeguards isn't a moneymaker.
+									That means that the technical overlap between nuclear fields and latest in cryptography is just pretty small.
+								</p>
+								<p>
+									Now, before I show you what we accomplished, I want to take a few minutes to explain how MPC actually works.
+									It's <em>super</em> cool, but I told you it wasn't magic, and so I'm going to have to back that up.
+								</p>
+								Icons: clock, caution symbol, brain
+							</aside>
+						</section>
+							
+	
+					</section>
+	
+					<section id="digital-circuits" data-background-color="#14A7A9">
+							
+						<p class="title fragment" data-fragment-index="1">$ A \stackrel{?}{=} B $</p>
+						<div class="container r-stack">
+							<img src="img/comparator-circuit/comparator.png" class="comparator washout fragment fade-out" data-fragment-index="1">
+							<img src="img/comparator-circuit/comparator-0.png" class="comparator fragment" data-fragment-index="1">
+							<img src="img/comparator-circuit/comparator-1.png" class="comparator fragment" data-fragment-index="2">
+							<img src="img/comparator-circuit/comparator-2.png" class="comparator fragment" data-fragment-index="3">
+							<img src="img/comparator-circuit/comparator-3.png" class="comparator fragment" data-fragment-index="4">
+							<p class="text-overlay fragment fade-in-then-out" data-fragment-index="0">Digital logic circuits can evaluate any computable function.</p>
+						</div>
+	
+						<aside class="notes">
+							<p>
+								You may have learned at some point that any calculation that your computer can do can be performed using a digital logic circuit.
+								This circuit here shows a simple calculation: is bit $A$ (the circuit's input wire on the top left) greater than, less than, or equal to bit $B$ (the input wire on the bottom left)? 
+							</p>
+							<p>
+								By adding gates, the circuit can be scaled up to do almost anything.
+								Real numbers are reduced to binary, and every addition, subtraction, multiplication, division, square root, modulus, exponential, you name it, is represented using a complex system of logic gates:  NOT, AND, OR, and the like.
+							</p>
+							<p>
+								Garbled circuits build on this foundation.
+								Let's look at the two party case.
+							</p>
+						</aside>
+					</section>
+	
+							
+					<section id="party-inputs" data-background-color="#14A7A9">
+	
+						<section id="two-parties" data-auto-animate>
+							<div class="title"><h1 data-id="two-parties">2 Parties</h1></div>
+							<div class="info">
+								<ol>
+									<li class="fragment" data-fragment-index="1">
+										<div class="party">
+											<div class="party-name">Facility:</div><div class="symbol" data-id="facility-symbol">$F$</div>
+										</div>
+									</li>
+									<li class="fragment" data-fragment-index="2">
+										<div class="party">
+											<div class="party-name">IAEA:</div><div class="symbol" data-id="inspector-symbol">$I$</div>
+										</div>
+									</li>
+									<div class="equivalence fragment" data-id="f-equals-i">$F \stackrel{?}{=} I$</div>
+								</ol>
 							</div>
-							<div class="wrapper fragment" data-fragment-index="15" id="tt-and-wrapper-highlight">
-							 <div class="wrapper fragment" data-fragment-index="17" id="tt-and-wrapper-unhighlight">
-								 <div class="truthtable fragment" data-fragment-index="3" id="tt-and" style="top: 125px; left: 1200px;">
-								  <div class="header row">
-								   <div class="cell" data-id="tt-and-header-cell0">
-								    $X_0$
-								   </div>
-								   <div class="cell" data-id="tt-and-header-cell1">
-								    $X_1$
-								   </div>
-								   <div class="output cell" data-id="tt-and-header-cell-output">
-								    $X$
-								   </div>
-								   <div class="encrypted cell fragment" data-fragment-index="25" data-id="tt-and-header-cell-encrypted">
-								    <img class="lock" src="img/lock/lock2.png"/>
-								   </div>
-								  </div>
-								  <div class="row">
-								   <div class="cell r-stack" data-id="tt-and-row0-cell0">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     0
+							<aside class="notes">
+								<p>
+									To keep the focus on safeguards, we'll say one party is a nuclear facility, and the other is the IAEA.
+								</p>
+								<p>
+									Our two parties agree on a function to compute; for simplicity, let's imagine a function that tells us if the two parties have picked different numbers from just the small set of integers 0 through 3.
+								</p>
+							</aside>
+						</section>
+	
+						<section id="circuit-inputs" data-auto-animate>
+							<div class="title"><h1 data-id="two-parties">2 Parties</h1><div>&nbsp $\times$ &nbsp</div><h1>2 Inputs</h1></div>
+							<div class="info">
+								<ol style="list-style-type: none;">
+									<li>
+										<div class="party">
+											<div class="symbol" data-id="facility-symbol">$F$</div><div class="fragment" data-fragment-index="1">$=F_1 F_0$</div>
+										</div>
+									</li>
+									<li>
+										<div class="party">
+											<div class="symbol" data-id="inspector-symbol">$I$</div><div class="fragment" data-fragment-index="1">$\,=I_1 I_0$</div>
+										</div>
+									</li>
+									<div class="equivalence" data-id="f-equals-i">$F \stackrel{?}{=} I$</div>
+								</ol>
+								<div class="examples">
+									<div class="bracket fragment">$\{$</div>
+									<div class="binary">
+										<div class="fragment">$0 = 00_2$</div>
+										<div class="fragment">$1 = 01_2$</div>
+										<div class="fragment">$2 = 10_2$</div>
+										<div class="fragment">$3 = 11_2$</div>
+									</div>
+								</div>
+							</div>
+	
+							<aside class="notes">
+								<p>
+									Since our circuit will work in binary, we convert our integer possibilities to base 2 and get 00, 01, 10, and 11.
+									We see that we have two-bit inputs for each party.
+								</p>
+							</aside>
+						</section>
+	
+					</section>
+	
+					<section class="equality-circuit" data-background-color="#14A7A9">
+	
+						<section data-auto-animate>
+	
+							<div class="slide-content">
+								<p class="fragment viewpoint" data-fragment-index="5">Facility's Viewpoint</p>
+		
+								<div class="definitions" data-id="definitions">
+									<div class="definition">
+										$ F = F_1 F_0 $
+									</div>
+									<div class="definition">
+										$ \;I = I_1 I_0 $
+									</div>
+								</div>
+	
+								<div class="circuit-diagram">
+									<img src="img/equality-circuit.png" class="circuit-diagram" alt="circuit evaluating equality">
+								</div>
+			
+								<div class="wrapper fragment" data-fragment-index="4" id="tt-xor0-wrapper-highlight">
+								 <div class="wrapper fragment" data-fragment-index="11" id="tt-xor0-wrapper-unhighlight">
+								  <div class="truthtable fragment" data-fragment-index="1" id="tt-xor0" style="top: 0; left: 600px;">
+								   <div class="header row">
+								    <div class="cell" data-id="tt-xor0-header-cell0">
+								     $F_0$
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      bd67
+								    <div class="cell" data-id="tt-xor0-header-cell1">
+								     $I_0$
+								    </div>
+								    <div class="output cell" data-id="tt-xor0-header-cell-output">
+								     $X_0$
+								    </div>
+								    <div class="encrypted cell fragment" data-fragment-index="18" data-id="tt-xor0-header-cell-encrypted">
+								     <img class="lock" src="img/lock/lock0.png"/>
+								    </div>
+								   </div>
+								   <div class="row">
+								    <div class="cell r-stack" data-id="tt-xor0-row0-cell0">
+								     <div class="fragment fade-out" data-fragment-index="5">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="5">
+								      <div class="fragment fade-out" data-fragment-index="19">
+								       6fd0
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="19">
+								      🔑
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     🔑
-								    </div>
-								   </div>
-								   <div class="cell r-stack" data-id="tt-and-row0-cell1">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     0
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      7d2f
+								    <div class="cell r-stack" data-id="tt-xor0-row0-cell1">
+								     <div class="fragment fade-out" data-fragment-index="7">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="7">
+								      <div class="fragment fade-out" data-fragment-index="19">
+								       32f1
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="19">
+								      🔑
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     🔑
-								    </div>
-								   </div>
-								   <div class="output cell r-stack" data-id="tt-and-row0-cell-output">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     0
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      bbe9
+								    <div class="output cell r-stack" data-id="tt-xor0-row0-cell-output">
+								     <div class="fragment fade-out" data-fragment-index="10">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="10">
+								      <div class="fragment fade-out" data-fragment-index="19">
+								       ed56
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="19">
+								      ••••
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     ••••
-								    </div>
-								   </div>
-								   <div class="encrypted cell fragment" data-fragment-index="25" data-id="tt-and-row0-cell-encrypted">
-								    <div class="fragment fade-right" data-fragment-index="26">
-								     6f4e
-								    </div>
-								   </div>
-								  </div>
-								  <div class="row">
-								   <div class="cell r-stack" data-id="tt-and-row1-cell0">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     0
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      bd67
+								    <div class="encrypted cell fragment" data-fragment-index="18" data-id="tt-xor0-row0-cell-encrypted">
+								     <div class="fragment fade-right" data-fragment-index="19">
+								      fddd
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     🔑
-								    </div>
 								   </div>
-								   <div class="cell r-stack" data-id="tt-and-row1-cell1">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     1
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      19b6
+								   <div class="row">
+								    <div class="cell r-stack" data-id="tt-xor0-row1-cell0">
+								     <div class="fragment fade-out" data-fragment-index="5">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="5">
+								      <div class="fragment fade-out" data-fragment-index="20">
+								       6fd0
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="20">
+								      🔑
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     🔑
-								    </div>
-								   </div>
-								   <div class="output cell r-stack" data-id="tt-and-row1-cell-output">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     0
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      bbe9
+								    <div class="cell r-stack" data-id="tt-xor0-row1-cell1">
+								     <div class="fragment fade-out" data-fragment-index="8">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="8">
+								      <div class="fragment fade-out" data-fragment-index="20">
+								       c4d4
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="20">
+								      🔑
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     ••••
-								    </div>
-								   </div>
-								   <div class="encrypted cell fragment" data-fragment-index="25" data-id="tt-and-row1-cell-encrypted">
-								    <div class="fragment fade-right" data-fragment-index="26">
-								     b49c
-								    </div>
-								   </div>
-								  </div>
-								  <div class="row">
-								   <div class="cell r-stack" data-id="tt-and-row2-cell0">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     1
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      ed56
+								    <div class="output cell r-stack" data-id="tt-xor0-row1-cell-output">
+								     <div class="fragment fade-out" data-fragment-index="9">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="9">
+								      <div class="fragment fade-out" data-fragment-index="20">
+								       bd67
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="20">
+								      ••••
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     🔑
-								    </div>
-								   </div>
-								   <div class="cell r-stack" data-id="tt-and-row2-cell1">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     0
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      7d2f
+								    <div class="encrypted cell fragment" data-fragment-index="18" data-id="tt-xor0-row1-cell-encrypted">
+								     <div class="fragment fade-right" data-fragment-index="20">
+								      ad11
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     🔑
-								    </div>
 								   </div>
-								   <div class="output cell r-stack" data-id="tt-and-row2-cell-output">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     0
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      bbe9
+								   <div class="row">
+								    <div class="cell r-stack" data-id="tt-xor0-row2-cell0">
+								     <div class="fragment fade-out" data-fragment-index="6">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="6">
+								      <div class="fragment fade-out" data-fragment-index="21">
+								       131b
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="21">
+								      🔑
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     ••••
-								    </div>
-								   </div>
-								   <div class="encrypted cell fragment" data-fragment-index="25" data-id="tt-and-row2-cell-encrypted">
-								    <div class="fragment fade-right" data-fragment-index="26">
-								     712a
-								    </div>
-								   </div>
-								  </div>
-								  <div class="row">
-								   <div class="cell r-stack" data-id="tt-and-row3-cell0">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     1
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      ed56
+								    <div class="cell r-stack" data-id="tt-xor0-row2-cell1">
+								     <div class="fragment fade-out" data-fragment-index="7">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="7">
+								      <div class="fragment fade-out" data-fragment-index="21">
+								       32f1
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="21">
+								      🔑
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     🔑
-								    </div>
-								   </div>
-								   <div class="cell r-stack" data-id="tt-and-row3-cell1">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     1
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      19b6
+								    <div class="output cell r-stack" data-id="tt-xor0-row2-cell-output">
+								     <div class="fragment fade-out" data-fragment-index="9">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="9">
+								      <div class="fragment fade-out" data-fragment-index="21">
+								       bd67
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="21">
+								      ••••
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     🔑
-								    </div>
-								   </div>
-								   <div class="output cell r-stack" data-id="tt-and-row3-cell-output">
-								    <div class="fragment fade-out" data-fragment-index="16">
-								     1
-								    </div>
-								    <div class="fragment fade-in" data-fragment-index="16">
-								     <div class="fragment fade-out" data-fragment-index="26">
-								      0084
+								    <div class="encrypted cell fragment" data-fragment-index="18" data-id="tt-xor0-row2-cell-encrypted">
+								     <div class="fragment fade-right" data-fragment-index="21">
+								      c2bf
 								     </div>
 								    </div>
-								    <div class="fragment fade-in" data-fragment-index="26">
-								     ••••
-								    </div>
 								   </div>
-								   <div class="encrypted cell fragment" data-fragment-index="25" data-id="tt-and-row3-cell-encrypted">
-								    <div class="fragment fade-right" data-fragment-index="26">
-								     f4de
+								   <div class="row">
+								    <div class="cell r-stack" data-id="tt-xor0-row3-cell0">
+								     <div class="fragment fade-out" data-fragment-index="6">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="6">
+								      <div class="fragment fade-out" data-fragment-index="22">
+								       131b
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="22">
+								      🔑
+								     </div>
+								    </div>
+								    <div class="cell r-stack" data-id="tt-xor0-row3-cell1">
+								     <div class="fragment fade-out" data-fragment-index="8">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="8">
+								      <div class="fragment fade-out" data-fragment-index="22">
+								       c4d4
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="22">
+								      🔑
+								     </div>
+								    </div>
+								    <div class="output cell r-stack" data-id="tt-xor0-row3-cell-output">
+								     <div class="fragment fade-out" data-fragment-index="10">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="10">
+								      <div class="fragment fade-out" data-fragment-index="22">
+								       ed56
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="22">
+								      ••••
+								     </div>
+								    </div>
+								    <div class="encrypted cell fragment" data-fragment-index="18" data-id="tt-xor0-row3-cell-encrypted">
+								     <div class="fragment fade-right" data-fragment-index="22">
+								      4b0e
+								     </div>
 								    </div>
 								   </div>
 								  </div>
 								 </div>
 								</div>
+								<div class="wrapper fragment" data-fragment-index="12" id="tt-xor1-wrapper-highlight">
+								 <div class="wrapper fragment" data-fragment-index="14" id="tt-xor1-wrapper-unhighlight">
+								  <div class="truthtable fragment" data-fragment-index="2" id="tt-xor1" style="top: 800px; left: 600px;">
+								   <div class="header row">
+								    <div class="cell" data-id="tt-xor1-header-cell0">
+								     $F_1$
+								    </div>
+								    <div class="cell" data-id="tt-xor1-header-cell1">
+								     $I_1$
+								    </div>
+								    <div class="output cell" data-id="tt-xor1-header-cell-output">
+								     $X_1$
+								    </div>
+								    <div class="encrypted cell fragment" data-fragment-index="23" data-id="tt-xor1-header-cell-encrypted">
+								     <img class="lock" id="tt-xor1-lock" src="img/lock/lock1.png"/>
+								    </div>
+								   </div>
+								   <div class="row">
+								    <div class="cell r-stack" data-id="tt-xor1-row0-cell0">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       5e4d
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      🔑
+								     </div>
+								    </div>
+								    <div class="cell r-stack" data-id="tt-xor1-row0-cell1">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       253e
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      🔑
+								     </div>
+								    </div>
+								    <div class="output cell r-stack" data-id="tt-xor1-row0-cell-output">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       19b6
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      ••••
+								     </div>
+								    </div>
+								    <div class="encrypted cell fragment" data-fragment-index="23" data-id="tt-xor1-row0-cell-encrypted">
+								     <div class="fragment fade-right" data-fragment-index="24">
+								      0d14
+								     </div>
+								    </div>
+								   </div>
+								   <div class="row">
+								    <div class="cell r-stack" data-id="tt-xor1-row1-cell0">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       5e4d
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      🔑
+								     </div>
+								    </div>
+								    <div class="cell r-stack" data-id="tt-xor1-row1-cell1">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       767a
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      🔑
+								     </div>
+								    </div>
+								    <div class="output cell r-stack" data-id="tt-xor1-row1-cell-output">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       7d2f
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      ••••
+								     </div>
+								    </div>
+								    <div class="encrypted cell fragment" data-fragment-index="23" data-id="tt-xor1-row1-cell-encrypted">
+								     <div class="fragment fade-right" data-fragment-index="24">
+								      cd16
+								     </div>
+								    </div>
+								   </div>
+								   <div class="row">
+								    <div class="cell r-stack" data-id="tt-xor1-row2-cell0">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       41cb
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      🔑
+								     </div>
+								    </div>
+								    <div class="cell r-stack" data-id="tt-xor1-row2-cell1">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       253e
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      🔑
+								     </div>
+								    </div>
+								    <div class="output cell r-stack" data-id="tt-xor1-row2-cell-output">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      0
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       7d2f
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      ••••
+								     </div>
+								    </div>
+								    <div class="encrypted cell fragment" data-fragment-index="23" data-id="tt-xor1-row2-cell-encrypted">
+								     <div class="fragment fade-right" data-fragment-index="24">
+								      12cf
+								     </div>
+								    </div>
+								   </div>
+								   <div class="row">
+								    <div class="cell r-stack" data-id="tt-xor1-row3-cell0">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       41cb
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      🔑
+								     </div>
+								    </div>
+								    <div class="cell r-stack" data-id="tt-xor1-row3-cell1">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       767a
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      🔑
+								     </div>
+								    </div>
+								    <div class="output cell r-stack" data-id="tt-xor1-row3-cell-output">
+								     <div class="fragment fade-out" data-fragment-index="13">
+								      1
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="13">
+								      <div class="fragment fade-out" data-fragment-index="24">
+								       19b6
+								      </div>
+								     </div>
+								     <div class="fragment fade-in" data-fragment-index="24">
+								      ••••
+								     </div>
+								    </div>
+								    <div class="encrypted cell fragment" data-fragment-index="23" data-id="tt-xor1-row3-cell-encrypted">
+								     <div class="fragment fade-right" data-fragment-index="24">
+								      6dc9
+								     </div>
+								    </div>
+								   </div>
+								  </div>
+								 </div>
+								</div>
+								<div class="wrapper fragment" data-fragment-index="15" id="tt-and-wrapper-highlight">
+								 <div class="wrapper fragment" data-fragment-index="17" id="tt-and-wrapper-unhighlight">
+									 <div class="truthtable fragment" data-fragment-index="3" id="tt-and" style="top: 125px; left: 1200px;">
+									  <div class="header row">
+									   <div class="cell" data-id="tt-and-header-cell0">
+									    $X_0$
+									   </div>
+									   <div class="cell" data-id="tt-and-header-cell1">
+									    $X_1$
+									   </div>
+									   <div class="output cell" data-id="tt-and-header-cell-output">
+									    $X$
+									   </div>
+									   <div class="encrypted cell fragment" data-fragment-index="25" data-id="tt-and-header-cell-encrypted">
+									    <img class="lock" src="img/lock/lock2.png"/>
+									   </div>
+									  </div>
+									  <div class="row">
+									   <div class="cell r-stack" data-id="tt-and-row0-cell0">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     0
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      bd67
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     🔑
+									    </div>
+									   </div>
+									   <div class="cell r-stack" data-id="tt-and-row0-cell1">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     0
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      7d2f
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     🔑
+									    </div>
+									   </div>
+									   <div class="output cell r-stack" data-id="tt-and-row0-cell-output">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     0
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      bbe9
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     ••••
+									    </div>
+									   </div>
+									   <div class="encrypted cell fragment" data-fragment-index="25" data-id="tt-and-row0-cell-encrypted">
+									    <div class="fragment fade-right" data-fragment-index="26">
+									     6f4e
+									    </div>
+									   </div>
+									  </div>
+									  <div class="row">
+									   <div class="cell r-stack" data-id="tt-and-row1-cell0">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     0
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      bd67
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     🔑
+									    </div>
+									   </div>
+									   <div class="cell r-stack" data-id="tt-and-row1-cell1">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     1
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      19b6
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     🔑
+									    </div>
+									   </div>
+									   <div class="output cell r-stack" data-id="tt-and-row1-cell-output">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     0
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      bbe9
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     ••••
+									    </div>
+									   </div>
+									   <div class="encrypted cell fragment" data-fragment-index="25" data-id="tt-and-row1-cell-encrypted">
+									    <div class="fragment fade-right" data-fragment-index="26">
+									     b49c
+									    </div>
+									   </div>
+									  </div>
+									  <div class="row">
+									   <div class="cell r-stack" data-id="tt-and-row2-cell0">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     1
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      ed56
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     🔑
+									    </div>
+									   </div>
+									   <div class="cell r-stack" data-id="tt-and-row2-cell1">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     0
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      7d2f
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     🔑
+									    </div>
+									   </div>
+									   <div class="output cell r-stack" data-id="tt-and-row2-cell-output">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     0
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      bbe9
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     ••••
+									    </div>
+									   </div>
+									   <div class="encrypted cell fragment" data-fragment-index="25" data-id="tt-and-row2-cell-encrypted">
+									    <div class="fragment fade-right" data-fragment-index="26">
+									     712a
+									    </div>
+									   </div>
+									  </div>
+									  <div class="row">
+									   <div class="cell r-stack" data-id="tt-and-row3-cell0">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     1
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      ed56
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     🔑
+									    </div>
+									   </div>
+									   <div class="cell r-stack" data-id="tt-and-row3-cell1">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     1
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      19b6
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     🔑
+									    </div>
+									   </div>
+									   <div class="output cell r-stack" data-id="tt-and-row3-cell-output">
+									    <div class="fragment fade-out" data-fragment-index="16">
+									     1
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="16">
+									     <div class="fragment fade-out" data-fragment-index="26">
+									      0084
+									     </div>
+									    </div>
+									    <div class="fragment fade-in" data-fragment-index="26">
+									     ••••
+									    </div>
+									   </div>
+									   <div class="encrypted cell fragment" data-fragment-index="25" data-id="tt-and-row3-cell-encrypted">
+									    <div class="fragment fade-right" data-fragment-index="26">
+									     f4de
+									    </div>
+									   </div>
+									  </div>
+									 </div>
+									</div>
+								</div>
+		
+							</div>
+							<aside class="notes">
+								<p>
+									Each party has two input wires to the circuit, and the party's integers are only the same if each bit in each input is the same.
+									The gate that gives a one only when the bits are identical is the XNOR gate (you can see that on this truth table here).
+									We have two of these XNOR gates, one for each pair of bits.
+									Then, since <em>both</em> pairs of bits have to be the same, an AND gate gives us an output value of 1 only when both of the XNOR gates confirm a match.
+								</p>
+								<p>
+									Now, this is all relatively straightforward, and we can see all the bits clear as day.
+									However, we need the circuit to be <em>garbled</em>.
+								</p>
+								<p>
+									Let's imagine that the facility goes through this circuit and replaces the two values on each wire with two random strings that only they know.
+									Starting with the first XNOR gate, we replace the 0 and 1 on the first input wire, then 0 and 1 on the second input wire, and finally 0 and 1 on the output wire.
+									We repeat this process for the second XNOR gate.
+									And finally one last time for the AND gate.
+									After the labels are added, we can still see the pattern from before, but that's the only thing that tells us whether a label corresponds to a 0 or a 1.
+								</p>
+								<p>
+									Next, the facility uses the input wire labels for each gate to symmetrically encrypt the gate's output wire label.
+									We start in the first table, encrypting the first row, then the second, third, and fourth.
+									The process is the same in the the other two. 
+									This produces a 4 encrypted tokens for each gate, one for each row in every truth table.
+									If the facility were to hand you one token for each of the input wires to a gate, you could only successfully decrypt one of the four outputs.
+									And, the only thing indicating now which encrypted token belongs to which row is the fact that they haven't moved from where they started.
+									Let's change that. ((show shuffle))
+								</p>
+							</aside>
+	
+						</section>
+						<script>
+							// Highlight the wrapped truthtable
+							function highlightTruthtable(fragment) {	
+								console.log(fragment);
+								if (fragment.id == 'tt-xor0-wrapper-highlight') {
+									truthtable = document.getElementById('tt-xor0');
+									truthtable.classList.add('highlight');
+								}
+								if (fragment.id == 'tt-xor0-wrapper-unhighlight') {
+									truthtable = document.getElementById('tt-xor0');
+									truthtable.classList.remove('highlight');
+								}
+								if (fragment.id == 'tt-xor1-wrapper-highlight') {
+									console.log('success');
+									truthtable = document.getElementById('tt-xor1');
+									truthtable.classList.add('highlight');
+								}
+								if (fragment.id == 'tt-xor1-wrapper-unhighlight') {
+									truthtable = document.getElementById('tt-xor1');
+									truthtable.classList.remove('highlight');
+								}
+								if (fragment.id == 'tt-and-wrapper-highlight') {
+									console.log('success');
+									truthtable = document.getElementById('tt-and');
+									truthtable.classList.add('highlight');
+								}
+								if (fragment.id == 'tt-and-wrapper-unhighlight') {
+									truthtable = document.getElementById('tt-and');
+									truthtable.classList.remove('highlight');
+								}
+							}
+						</script>
+	
+						<section data-auto-animate>
+							
+							<div class="slide-content">
+								<p class="viewpoint">Facility's Viewpoint</p>
+		
+								<div class="definitions" data-id="definitions">
+									<div class="r-stack">
+										<div class="definition fragment fade-out" data-fragment-index="0">
+											$ F = F_1 F_0 $
+										</div>
+										<div class="definition fragment fade-in" data-fragment-index="0">
+											$ F = 1 \, 1_2 $
+										</div>
+									</div>
+									<div class="r-stack">
+										<div class="definition fragment fade-out" data-fragment-index="1">
+											$ \;I = I_1 I_0 $
+										</div>
+										<div class="definition fragment fade-in" data-fragment-index="1">
+											$ \;I = \, ? \, ? $
+										</div>
+									</div>
+								</div>
+								<div class="circuit-diagram">
+									<img src="img/equality-circuit.png" class="circuit-diagram" alt="circuit evaluating equality">
+								</div>
+			
+								<div class="truthtable" style="top: 0; left: 600px;">
+									<div class="header row">
+										<div class="cell" data-id="tt-xor0-header-cell0">
+											$F_0$
+										</div>
+										<div class="cell" data-id="tt-xor0-header-cell1">
+											$I_0$
+										</div>
+										<div class="output cell" data-id="tt-xor0-header-cell-output">
+											$X_0$
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor0-header-cell-encrypted">
+											<img src="img/lock/lock0.png" class="lock">
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor0-row1-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-xor0-row1-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-xor0-row1-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor0-row1-cell-encrypted">
+											ad11
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor0-row3-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-xor0-row3-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-xor0-row3-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor0-row3-cell-encrypted">
+											4b0e
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor0-row0-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-xor0-row0-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-xor0-row0-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor0-row0-cell-encrypted">
+											fddd
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor0-row2-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-xor0-row2-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-xor0-row2-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor0-row2-cell-encrypted">
+											c2bf
+										</div>
+									</div>
+								</div>
+			
+								<div class="truthtable" style="top: 800px; left: 600px;">
+									<div class="header row">
+										<div class="cell" data-id="tt-xor1-header-cell0">
+											$F_1$
+										</div>
+										<div class="cell" data-id="tt-xor1-header-cell1">
+											$I_1$
+										</div>
+										<div class="output cell" data-id="tt-xor1-header-cell-output">
+											$X_1$
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor1-header-cell-encrypted">
+											<img src="img/lock/lock1.png" class="lock">
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor1-row3-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-xor1-row3-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-xor1-row3-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor1-row3-cell-encrypted">
+											6dc9
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor1-row2-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-xor1-row2-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-xor1-row2-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor1-row2-cell-encrypted">
+											12cf
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor1-row1-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-xor1-row1-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-xor1-row1-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor1-row1-cell-encrypted">
+											cd16
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor1-row0-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-xor1-row0-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-xor1-row0-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor1-row0-cell-encrypted">
+											0d14
+										</div>
+									</div>
+								</div>
+			
+								<div class="truthtable" style="top: 125px; left: 1200px;">
+									<div class="header row">
+										<div class="cell" data-id="tt-and-header-cell0">
+											$X_0$
+										</div>
+										<div class="cell" data-id="tt-and-header-cell1">
+											$X_1$
+										</div>
+										<div class="output cell" data-id="tt-and-header-cell-output">
+											$X$
+										</div>
+										<div class="encrypted cell visible" data-id="tt-and-header-cell-encrypted">
+											<img src="img/lock/lock2.png" class="lock">
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-and-row2-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-and-row2-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-and-row2-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-and-row2-cell-encrypted">
+											712a
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-and-row1-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-and-row1-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-and-row1-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-and-row1-cell-encrypted">
+											b49c
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-and-row3-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-and-row3-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-and-row3-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-and-row3-cell-encrypted">
+											f4de
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-and-row0-cell0">
+											🔑
+										</div>
+										<div class="cell" data-id="tt-and-row0-cell1">
+											🔑
+										</div>
+										<div class="output cell" data-id="tt-and-row0-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-and-row0-cell-encrypted">
+											6f4e
+										</div>
+									</div>
+								</div>
+		
 							</div>
 	
-						</div>
-						<aside class="notes">
-							<p>
-								Each party has two input wires to the circuit, and the party's integers are only the same if each bit in each input is the same.
-								The gate that gives a one only when the bits are identical is the XNOR gate (you can see that on this truth table here).
-								We have two of these XNOR gates, one for each pair of bits.
-								Then, since <em>both</em> pairs of bits have to be the same, an AND gate gives us an output value of 1 only when both of the XNOR gates confirm a match.
-							</p>
-							<p>
-								Now, this is all relatively straightforward, and we can see all the bits clear as day.
-								However, we need the circuit to be <em>garbled</em>.
-							</p>
-							<p>
-								Let's imagine that the facility goes through this circuit and replaces the two values on each wire with two random strings that only they know.
-								Starting with the first XNOR gate, we replace the 0 and 1 on the first input wire, then 0 and 1 on the second input wire, and finally 0 and 1 on the output wire.
-								We repeat this process for the second XNOR gate.
-								And finally one last time for the AND gate.
-								After the labels are added, we can still see the pattern from before, but that's the only thing that tells us whether a label corresponds to a 0 or a 1.
-							</p>
-							<p>
-								Next, the facility uses the input wire labels for each gate to symmetrically encrypt the gate's output wire label.
-								We start in the first table, encrypting the first row, then the second, third, and fourth.
-								The process is the same in the the other two. 
-								This produces a 4 encrypted tokens for each gate, one for each row in every truth table.
-								If the facility were to hand you one token for each of the input wires to a gate, you could only successfully decrypt one of the four outputs.
-								And, the only thing indicating now which encrypted token belongs to which row is the fact that they haven't moved from where they started.
-								Let's change that. ((show shuffle))
-							</p>
-						</aside>
-
+							<aside class="notes">
+								<p>
+									Now remember, up until this point every step we've seen was performed by one party—the facility.
+									The facility knows all the labels and what values they represent, and so they can give the labels matching their own input values to the IAEA.
+									Since the other party hasn't seen any of this yet, they don't know which random label matches which wire value; that label is just a random string to them. 
+								</p>
+								<p>
+									Now the IAEA needs to get the labels for <em>its</em> own input wires, but this presents a dilemma.
+									It can't directly ask the facility for the label corresponding to it's bit choice, because then the facility knows that the IAEA's input is whichever one it asked for.
+									Likewise, the IAEA can't be shown both labels and the matching values, because then it will be able to decrypt more than just one of the encrypted rows.
+								</p>
+								</p>
+							</aside>
+						</section>
 					</section>
-					<script>
-						// Highlight the wrapped truthtable
-						function highlightTruthtable(fragment) {	
-							console.log(fragment);
-							if (fragment.id == 'tt-xor0-wrapper-highlight') {
-								truthtable = document.getElementById('tt-xor0');
-								truthtable.classList.add('highlight');
-							}
-							if (fragment.id == 'tt-xor0-wrapper-unhighlight') {
-								truthtable = document.getElementById('tt-xor0');
-								truthtable.classList.remove('highlight');
-							}
-							if (fragment.id == 'tt-xor1-wrapper-highlight') {
-								console.log('success');
-								truthtable = document.getElementById('tt-xor1');
-								truthtable.classList.add('highlight');
-							}
-							if (fragment.id == 'tt-xor1-wrapper-unhighlight') {
-								truthtable = document.getElementById('tt-xor1');
-								truthtable.classList.remove('highlight');
-							}
-							if (fragment.id == 'tt-and-wrapper-highlight') {
-								console.log('success');
-								truthtable = document.getElementById('tt-and');
-								truthtable.classList.add('highlight');
-							}
-							if (fragment.id == 'tt-and-wrapper-unhighlight') {
-								truthtable = document.getElementById('tt-and');
-								truthtable.classList.remove('highlight');
-							}
-						}
-					</script>
-
-					<section data-auto-animate>
-						
+	
+					<section id="ot">
 						<div class="slide-content">
-							<p class="viewpoint">Facility's Viewpoint</p>
 	
-							<div class="definitions" data-id="definitions">
-								<div class="r-stack">
-									<div class="definition fragment fade-out" data-fragment-index="0">
-										$ F = F_1 F_0 $
-									</div>
-									<div class="definition fragment fade-in" data-fragment-index="0">
-										$ F = 1 \, 1_2 $
-									</div>
-								</div>
-								<div class="r-stack">
-									<div class="definition fragment fade-out" data-fragment-index="1">
-										$ \;I = I_1 I_0 $
-									</div>
-									<div class="definition fragment fade-in" data-fragment-index="1">
-										$ \;I = \, ? \, ? $
-									</div>
-								</div>
-							</div>
-							<div class="circuit-diagram">
-								<img src="img/equality-circuit.png" class="circuit-diagram" alt="circuit evaluating equality">
-							</div>
+							<h1>Oblivious Transfer</h2>
 		
-							<div class="truthtable" style="top: 0; left: 600px;">
-								<div class="header row">
-									<div class="cell" data-id="tt-xor0-header-cell0">
-										$F_0$
-									</div>
-									<div class="cell" data-id="tt-xor0-header-cell1">
-										$I_0$
-									</div>
-									<div class="output cell" data-id="tt-xor0-header-cell-output">
-										$X_0$
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor0-header-cell-encrypted">
-										<img src="img/lock/lock0.png" class="lock">
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor0-row1-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-xor0-row1-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-xor0-row1-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor0-row1-cell-encrypted">
-										ad11
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor0-row3-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-xor0-row3-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-xor0-row3-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor0-row3-cell-encrypted">
-										4b0e
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor0-row0-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-xor0-row0-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-xor0-row0-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor0-row0-cell-encrypted">
-										fddd
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor0-row2-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-xor0-row2-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-xor0-row2-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor0-row2-cell-encrypted">
-										c2bf
-									</div>
-								</div>
-							</div>
-		
-							<div class="truthtable" style="top: 800px; left: 600px;">
-								<div class="header row">
-									<div class="cell" data-id="tt-xor1-header-cell0">
-										$F_1$
-									</div>
-									<div class="cell" data-id="tt-xor1-header-cell1">
-										$I_1$
-									</div>
-									<div class="output cell" data-id="tt-xor1-header-cell-output">
-										$X_1$
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor1-header-cell-encrypted">
-										<img src="img/lock/lock1.png" class="lock">
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor1-row3-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-xor1-row3-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-xor1-row3-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor1-row3-cell-encrypted">
-										6dc9
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor1-row2-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-xor1-row2-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-xor1-row2-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor1-row2-cell-encrypted">
-										12cf
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor1-row1-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-xor1-row1-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-xor1-row1-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor1-row1-cell-encrypted">
-										cd16
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor1-row0-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-xor1-row0-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-xor1-row0-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor1-row0-cell-encrypted">
-										0d14
-									</div>
-								</div>
-							</div>
-		
-							<div class="truthtable" style="top: 125px; left: 1200px;">
-								<div class="header row">
-									<div class="cell" data-id="tt-and-header-cell0">
-										$X_0$
-									</div>
-									<div class="cell" data-id="tt-and-header-cell1">
-										$X_1$
-									</div>
-									<div class="output cell" data-id="tt-and-header-cell-output">
-										$X$
-									</div>
-									<div class="encrypted cell visible" data-id="tt-and-header-cell-encrypted">
-										<img src="img/lock/lock2.png" class="lock">
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-and-row2-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-and-row2-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-and-row2-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-and-row2-cell-encrypted">
-										712a
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-and-row1-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-and-row1-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-and-row1-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-and-row1-cell-encrypted">
-										b49c
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-and-row3-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-and-row3-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-and-row3-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-and-row3-cell-encrypted">
-										f4de
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-and-row0-cell0">
-										🔑
-									</div>
-									<div class="cell" data-id="tt-and-row0-cell1">
-										🔑
-									</div>
-									<div class="output cell" data-id="tt-and-row0-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-and-row0-cell-encrypted">
-										6f4e
-									</div>
-								</div>
-							</div>
+							<div id="ot-graphic">
 	
-						</div>
-
-						<aside class="notes">
-							<p>
-								Now remember, up until this point every step we've seen was performed by one party—the facility.
-								The facility knows all the labels and what values they represent, and so they can give the labels matching their own input values to the IAEA.
-								Since the other party hasn't seen any of this yet, they don't know which random label matches which wire value; that label is just a random string to them. 
-							</p>
-							<p>
-								Now the IAEA needs to get the labels for <em>its</em> own input wires, but this presents a dilemma.
-								It can't directly ask the facility for the label corresponding to it's bit choice, because then the facility knows that the IAEA's input is whichever one it asked for.
-								Likewise, the IAEA can't be shown both labels and the matching values, because then it will be able to decrypt more than just one of the encrypted rows.
-							</p>
-							</p>
-						</aside>
-					</section>
-				</section>
-
-				<section id="ot">
-					<div class="slide-content">
-
-						<h1>Oblivious Transfer</h2>
+								<div class="party">
+									<h5>Facility</h5>
+									<div class="action">
+										<div class="labels">
+											<div class="label">
+												🔑 (0) = 32f1
+											</div>
+											<div class="label">
+												🔑 (1) = c4d4
+											</div>
+										</div>
+										<div class="arrow">
+											$\longrightarrow$
+										</div>
+									</div>
+								</div>
 	
-						<div id="ot-graphic">
-
-							<div class="party">
-								<h5>Facility</h5>
-								<div class="action">
-									<div class="labels">
+								<div class="black-box">
+									OT
+								</div>
+	
+								<div class="party">
+									<h5>Inspector</h5>
+									<div class="action">
+										<div class="arrow">
+											$\longleftarrow$
+										</div>
+										<div class="labels">
+											<div class="choice">
+												🔑 (1)? 
+											</div>
+										</div>
+									</div>
+									<div class="action fragment">
+										<div class="arrow">
+											$\longrightarrow$
+										</div>
 										<div class="label">
-											🔑 (0) = 32f1
-										</div>
-										<div class="label">
-											🔑 (1) = c4d4
-										</div>
-									</div>
-									<div class="arrow">
-										$\longrightarrow$
-									</div>
-								</div>
-							</div>
-
-							<div class="black-box">
-								OT
-							</div>
-
-							<div class="party">
-								<h5>Inspector</h5>
-								<div class="action">
-									<div class="arrow">
-										$\longleftarrow$
-									</div>
-									<div class="labels">
-										<div class="choice">
-											🔑 (1)? 
+												🔑 = c4d4
 										</div>
 									</div>
 								</div>
-								<div class="action fragment">
-									<div class="arrow">
-										$\longrightarrow$
-									</div>
-									<div class="label">
-											🔑 = c4d4
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-					<aside class="notes">
-						<p>
-							We solve this using something called oblivious transfer.
-							We'll treat it as a black box, where the generator party can put both labels into the box, and through an interactive process of encryption and decryption, the IAEA gets only one label of it's choice. 
-						</p>
-						<p>
-							I'll reiterate that: the IAEA learns only one label, and the generator learns <em>nothing</em>.
-						</p>
-					</aside>
-				</section>
-						
-				<section class="equality-circuit" data-background-color="#14A7A9">
-					<section data-auto-animate>
-						
-						<div class="slide-content">
-							<p class="viewpoint">Inspector's Viewpoint</p>
 	
-							<div class="definitions" data-id="definitions">
-								<div class="r-stack">
-									<div class="definition fragment fade-out" data-fragment-index="1">
-										$ F = F_1 F_0 $
-									</div>
-									<div class="definition fragment fade-in" data-fragment-index="1">
-										$ F = \, ? \, ? $
-									</div>
-								</div>
-								<div class="r-stack">
-									<div class="definition fragment fade-out" data-fragment-index="0">
-										$ \;I = I_1 I_0 $
-									</div>
-									<div class="definition fragment fade-in" data-fragment-index="0">
-										$ \;I = 1 \, 0_2 $
-									</div>
-								</div>
-							</div>
-							<div class="circuit-diagram r-stack">
-								<img src="img/equality-circuit.png" alt="circuit evaluating equality">
-								<img src="img/equality-circuit-solved.png" class="fragment" data-fragment-index="9" alt="circuit evaluating equality">
-							</div>
-		
-							<div class="truthtable" style="top: -20px; left: 600px;">
-								<div class="header row">
-									<div class="cell" data-id="tt-xor0-header-cell0">
-										$F_0$
-									</div>
-									<div class="cell" data-id="tt-xor0-header-cell1">
-										$I_0$
-									</div>
-									<div class="output cell" data-id="tt-xor0-header-cell-output">
-										$X_0$
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor0-header-cell-encrypted">
-										<img src="img/lock/lock0.png" class="lock">
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor0-row1-cell0">
-									</div>
-									<div class="cell" data-id="tt-xor0-row1-cell1">
-									</div>
-									<div class="output cell" data-id="tt-xor0-row1-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor0-row1-cell-encrypted">
-										ad11
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor0-row3-cell0">
-										<div class="fragment" data-fragment-index="2">
-											131b
-										</div>
-									</div>
-									<div class="cell" data-id="tt-xor0-row3-cell1">
-										<div class="fragment" data-fragment-index="3">
-											32f1
-										</div>
-									</div>
-									<div class="output cell r-stack" data-id="tt-xor0-row3-cell-output">
-										<div class="fragment fade-out" data-fragment-index="4">
-											••••
-										</div>
-										<div class="fragment" data-fragment-index="4">
-											bd67
-										</div>
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor0-row3-cell-encrypted">
-										4b0e
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor0-row0-cell0">
-									</div>
-									<div class="cell" data-id="tt-xor0-row0-cell1">
-									</div>
-									<div class="output cell" data-id="tt-xor0-row0-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor0-row0-cell-encrypted">
-										fddd
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor0-row2-cell0">
-									</div>
-									<div class="cell" data-id="tt-xor0-row2-cell1">
-									</div>
-									<div class="output cell" data-id="tt-xor0-row2-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor0-row2-cell-encrypted">
-										c2bf
-									</div>
-								</div>
-							</div>
-		
-							<div class="truthtable" style="top: 800px; left: 600px;">
-								<div class="header row">
-									<div class="cell" data-id="tt-xor1-header-cell0">
-										$F_1$
-									</div>
-									<div class="cell" data-id="tt-xor1-header-cell1">
-										$I_1$
-									</div>
-									<div class="output cell" data-id="tt-xor1-header-cell-output">
-										$X_1$
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor1-header-cell-encrypted">
-										<img src="img/lock/lock1.png" class="lock">
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor1-row3-cell0">
-										<div class="fragment" data-fragment-index="5">
-											41cb
-										</div>
-									</div>
-									<div class="cell" data-id="tt-xor1-row3-cell1">
-										<div class="fragment" data-fragment-index="6">
-											767a
-										</div>
-									</div>
-									<div class="output cell r-stack" data-id="tt-xor1-row3-cell-output">
-										<div class="fragment fade-out" data-fragment-index="7">
-											••••
-										</div>
-										<div class="fragment" data-fragment-index="7">
-											19b6
-										</div>
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor1-row3-cell-encrypted">
-										6dc9
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor1-row2-cell0">
-									</div>
-									<div class="cell" data-id="tt-xor1-row2-cell1">
-									</div>
-									<div class="output cell" data-id="tt-xor1-row2-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor1-row2-cell-encrypted">
-										12cf
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor1-row1-cell0">
-									</div>
-									<div class="cell" data-id="tt-xor1-row1-cell1">
-									</div>
-									<div class="output cell" data-id="tt-xor1-row1-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor1-row1-cell-encrypted">
-										cd16
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-xor1-row0-cell0">
-									</div>
-									<div class="cell" data-id="tt-xor1-row0-cell1">
-									</div>
-									<div class="output cell" data-id="tt-xor1-row0-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-xor1-row0-cell-encrypted">
-										0d14
-									</div>
-								</div>
-							</div>
-		
-							<div class="truthtable" style="top: 125px; left: 1200px;">
-								<div class="header row">
-									<div class="cell" data-id="tt-and-header-cell0">
-										$X_0$
-									</div>
-									<div class="cell" data-id="tt-and-header-cell1">
-										$X_1$
-									</div>
-									<div class="output cell" data-id="tt-and-header-cell-output">
-										$X$
-									</div>
-									<div class="encrypted cell visible" data-id="tt-and-header-cell-encrypted">
-										<img src="img/lock/lock2.png" class="lock">
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-and-row2-cell0">
-									</div>
-									<div class="cell" data-id="tt-and-row2-cell1">
-									</div>
-									<div class="output cell" data-id="tt-and-row2-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-and-row2-cell-encrypted">
-										712a
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-and-row1-cell0">
-										<div class="fragment" data-fragment-index="4">
-											bd67
-										</div>
-									</div>
-									<div class="cell" data-id="tt-and-row1-cell1">
-										<div class="fragment" data-fragment-index="7">
-											19b6
-										</div>
-									</div>
-									<div class="output cell r-stack" data-id="tt-and-row1-cell-output">
-										<div class="fragment fade-out" data-fragment-index="8">
-											••••
-										</div>
-										<div class="fragment fade-in-then-out" data-fragment-index="8">
-											bbe9
-										</div>
-										<div class="fragment" data-fragment-index="9">
-											0
-										</div>
-									</div>
-									<div class="encrypted cell visible" data-id="tt-and-row1-cell-encrypted">
-										b49c
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-and-row3-cell0">
-									</div>
-									<div class="cell" data-id="tt-and-row3-cell1">
-									</div>
-									<div class="output cell" data-id="tt-and-row3-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-and-row3-cell-encrypted">
-										f4de
-									</div>
-								</div>
-								<div class="row">
-									<div class="cell" data-id="tt-and-row0-cell0">
-									</div>
-									<div class="cell" data-id="tt-and-row0-cell1">
-									</div>
-									<div class="output cell" data-id="tt-and-row0-cell-output">
-										••••
-									</div>
-									<div class="encrypted cell visible" data-id="tt-and-row0-cell-encrypted">
-										6f4e
-									</div>
-								</div>
 							</div>
 	
 						</div>
-
+	
 						<aside class="notes">
 							<p>
-								After executing oblivious transfer, the IAEA has all the labels it needs: labels matching its own known values, and labels matching the facility's unknown values.
-								The IAEA can start walking through the circuit, successfully decrypting only one token for each gate.
-								This decrypted token reveals the label on that gate's output wire, which can then be used as a decryption key for the next gate.
-								Again, this process repeats for each gate in the circuit.
-								Finally, once the IAEA has the computed label on the circuit's output wire, it can share that label back to the facility so that the computation result becomes public. 
+								We solve this using something called oblivious transfer.
+								We'll treat it as a black box, where the generator party can put both labels into the box, and through an interactive process of encryption and decryption, the IAEA gets only one label of it's choice. 
 							</p>
 							<p>
-								So now that we've covered the fundamental cryptography, let's get back to real implementations.
+								I'll reiterate that: the IAEA learns only one label, and the generator learns <em>nothing</em>.
 							</p>
 						</aside>
 					</section>
-				</section>
-
-
-				<section id="codes">
-					<h1>Existing Frameworks</h1>
-					<div class="logos-container">
-						<div class="logos-container-row">
-							<img src="img/codes/fairplay.png" class="temp-tiny" alt="Fairplay logo">
-							<img src="img/codes/aby.png" class="temp-tiny" alt="ABY logo">
-						</div>
-						<div class="logos-container-row">
-							<img src="img/codes/mpyc.svg" class="temp-tiny" alt="MPyC logo">
-							<img src="img/codes/oblivc.png" class="temp-tiny" alt="Obliv-C logo">
-							<p>(and more...)</p>
-						</div>
-					</div>
-					<aside class="notes">
-						<p>
-							I told you before that we wanted to be able to identify anomalies in radiation spectra, effectively demonstrating that MPC worked on safeguards data.
-							At the same time, knowing our audience of safeguards inspectors and data analysts, we recognized that if this was to ever be more than just a fun idea, we needed to be able to do it a way that was clear and convincing—especially to folks at the IAEA who might not be at the forefront of cryptographic research.
-							We surveyed available MPC software frameworks, and found a pretty wide range of options available, which is great!
-						</p>
-						<p>
-							These were codes that satisfied our obvious criteria of being able to perform calculations correctly while keeping data private, but all of them presented other challenges...
-						</p>
-						<p>
-							Some were too limited in their ability to handle a challenge of this scope.
-							Some are no longer maintained.
-							Others are commercial, and so while potentially great for a contract down the line, they're not so great for a highly tailored demo with full transparency.
-							But most often, the codes were state-of-the-art research codes designed to showcase the latest development in the field, and were too sophisticated for building a demo aimed at a budget constrained inspectorate with a relatively limited base of expertise.
-						</p>
-					</aside>
-				</section>
-						
-				<section id="sok" data-background-color="#14A7A9">
-					
-					<section data-auto-animate>
-						<img src="img/sok-study.png" class="article" data-id="sok-paper">
-						<aside class="notes">
-							<p>
-								For perspective on this last point, there was a fantastic Systemization of Knowledge study published in 2019 by researchers at the University of Pennsylvania surveying a selection of MPC frameworks and related tools.
-								It estimated that learning, building, and testing their selection took 750 person hours (and even then, they didn't always succeed).
-								That's a computer science PhD candidate working for a month straight—no breaks, no weekends, no sleeping. 
-							</p>
-						</aside>
-					</section>
-
-					<section data-auto-animate>
-						<div class="time">
-							<div class="hours" data-id="750-hours">750 hours</div>
-						</div>
-						<img src="img/sok-study.png" class="article" data-id="sok-paper">
-						<aside class="notes">
-							<p>
-								For perspective on this last point, there was a fantastic Systemization of Knowledge study published in 2019 by researchers at the University of Pennsylvania surveying a selection of MPC frameworks and related tools.
-								It estimated that learning, building, and testing their selection took 750 person hours (and even then, they didn't always succeed).
-								That's a computer science PhD candidate working for a month straight—no breaks, no weekends, no sleeping. 
-							</p>
-						</aside>
-					</section>
-
-					<section data-auto-animate>
-						<div class="time">
-							<div class="hours faded" data-id="750-hours">750 hours</div>
-							<div class="days">31 ¼ days</div>
-						</div>
-						<img src="img/sok-study.png" class="article" data-id="sok-paper">
-						<aside class="notes">
-							<p>
-								For perspective on this last point, there was a fantastic Systemization of Knowledge study published in 2019 by researchers at the University of Pennsylvania surveying a selection of MPC frameworks and related tools.
-								It estimated that learning, building, and testing their selection took 750 person hours (and even then, they didn't always succeed).
-								That's a computer science PhD candidate working for a month straight—no breaks, no weekends, no sleeping. 
-							</p>
-						</aside>
-					</section>
-
-				</section>
-						
-				<section id="cyphercircuit"> 
-
-					<section data-auto-animate>
-						<h1>CypherCircuit</h1>
-						<aside class="notes">
-							<p>
-								So we built a protoype of our own, a Python package called CypherCircuit.
-							</p>
-						</aside>
-					</section>
-
-					<section data-auto-animate>
-						<h1>CypherCircuit</h1>
-						<div class="slide-content r-stack">
-							<div class="code-commentary fragment fade-out" data-fragment-index="1">
-								<p>Circuits can be built and evaluated in just a few lines of code.</p>
-								<div class="party-code short">
-									<div class="half-screen-code">
-										<h5>Facility</h5>
-										<pre><code class="python" data-trim>
-											# Build a circuit
-											circuit = CircuitBoard()
-											A, B = Wire(circuit), Wire(circuit)
-											OneBitComparator(A, B)
-			
-											# Run the protocol as the circuit generator
-											with Generator(circuit, evaluator_address) as facility:
-												vector = '1-'
-												facility.evaluate_protocol(vector)
-										</code></pre>
-									</div>
-									<div class="half-screen-code">
-										<h5>Inspector</h5>
-										<pre><code class="python" data-trim>
-											# Run the protocol as the circuit evaluator
-											with Evaluator(circuit, generator_address) as inspector:
-												vector = '-0'
-												inspector.evaluate_protocol(vector)
-										</code></pre>
-									</div>
-								</div>
-							</div>
-							<div class="code-commentary fragment" data-fragment-index="1">
-								<p>Circuits can be explored and analyzed on the fly.</p>
-								<div class="party-code long">
-									<div class="half-screen-code">
-										<pre><code class="python" data-trim>
-											>>> wire0.value
-											>>> wire1.value
-											False
-			
-											>>> wire2.value
-											True
-			
-											>>> and_gate = And(wire1, wire2)
-											>>> and_gate.output_wire.value
-											False
-			
-											>>> and_gate.truthtable
-											W0001  W0002  |  W0003
-											——————————————————————
-											  0      0    |    0
-											  0      1    |    0
-											  1      0    |    0
-											  1      1    |    1
-										</code></pre>
-									</div>
-									<div class="half-screen-code">
-										<pre><code class="python" data-trim>
-											>>> and_gate.label()
-											>>> and_gate.labeltable()
-											 W0001    W0002   |   W0003
-											————————————————————————————
-											70850a…  b54f72…  |  e785bd…
-											70850a…  d430d6…  |  e785bd…
-											11faae…  b54f72…  |  e785bd…
-											11faae…  d430d6…  |  86fa19…
+							
+					<section class="equality-circuit" data-background-color="#14A7A9">
+						<section data-auto-animate>
+							
+							<div class="slide-content">
+								<p class="viewpoint">Inspector's Viewpoint</p>
 		
-											>>> and_gate.garble()
-											>>> and_gate.tokentable
-											encrypted
-											—————————
-											 44e869…
-											 98ddc3…
-											 bf0f97…
-											 590a8a…
+								<div class="definitions" data-id="definitions">
+									<div class="r-stack">
+										<div class="definition fragment fade-out" data-fragment-index="1">
+											$ F = F_1 F_0 $
+										</div>
+										<div class="definition fragment fade-in" data-fragment-index="1">
+											$ F = \, ? \, ? $
+										</div>
+									</div>
+									<div class="r-stack">
+										<div class="definition fragment fade-out" data-fragment-index="0">
+											$ \;I = I_1 I_0 $
+										</div>
+										<div class="definition fragment fade-in" data-fragment-index="0">
+											$ \;I = 1 \, 0_2 $
+										</div>
+									</div>
+								</div>
+								<div class="circuit-diagram r-stack">
+									<img src="img/equality-circuit.png" alt="circuit evaluating equality">
+									<img src="img/equality-circuit-solved.png" class="fragment" data-fragment-index="9" alt="circuit evaluating equality">
+								</div>
+			
+								<div class="truthtable" style="top: -20px; left: 600px;">
+									<div class="header row">
+										<div class="cell" data-id="tt-xor0-header-cell0">
+											$F_0$
+										</div>
+										<div class="cell" data-id="tt-xor0-header-cell1">
+											$I_0$
+										</div>
+										<div class="output cell" data-id="tt-xor0-header-cell-output">
+											$X_0$
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor0-header-cell-encrypted">
+											<img src="img/lock/lock0.png" class="lock">
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor0-row1-cell0">
+										</div>
+										<div class="cell" data-id="tt-xor0-row1-cell1">
+										</div>
+										<div class="output cell" data-id="tt-xor0-row1-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor0-row1-cell-encrypted">
+											ad11
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor0-row3-cell0">
+											<div class="fragment" data-fragment-index="2">
+												131b
+											</div>
+										</div>
+										<div class="cell" data-id="tt-xor0-row3-cell1">
+											<div class="fragment" data-fragment-index="3">
+												32f1
+											</div>
+										</div>
+										<div class="output cell r-stack" data-id="tt-xor0-row3-cell-output">
+											<div class="fragment fade-out" data-fragment-index="4">
+												••••
+											</div>
+											<div class="fragment" data-fragment-index="4">
+												bd67
+											</div>
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor0-row3-cell-encrypted">
+											4b0e
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor0-row0-cell0">
+										</div>
+										<div class="cell" data-id="tt-xor0-row0-cell1">
+										</div>
+										<div class="output cell" data-id="tt-xor0-row0-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor0-row0-cell-encrypted">
+											fddd
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor0-row2-cell0">
+										</div>
+										<div class="cell" data-id="tt-xor0-row2-cell1">
+										</div>
+										<div class="output cell" data-id="tt-xor0-row2-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor0-row2-cell-encrypted">
+											c2bf
+										</div>
+									</div>
+								</div>
+			
+								<div class="truthtable" style="top: 800px; left: 600px;">
+									<div class="header row">
+										<div class="cell" data-id="tt-xor1-header-cell0">
+											$F_1$
+										</div>
+										<div class="cell" data-id="tt-xor1-header-cell1">
+											$I_1$
+										</div>
+										<div class="output cell" data-id="tt-xor1-header-cell-output">
+											$X_1$
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor1-header-cell-encrypted">
+											<img src="img/lock/lock1.png" class="lock">
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor1-row3-cell0">
+											<div class="fragment" data-fragment-index="5">
+												41cb
+											</div>
+										</div>
+										<div class="cell" data-id="tt-xor1-row3-cell1">
+											<div class="fragment" data-fragment-index="6">
+												767a
+											</div>
+										</div>
+										<div class="output cell r-stack" data-id="tt-xor1-row3-cell-output">
+											<div class="fragment fade-out" data-fragment-index="7">
+												••••
+											</div>
+											<div class="fragment" data-fragment-index="7">
+												19b6
+											</div>
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor1-row3-cell-encrypted">
+											6dc9
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor1-row2-cell0">
+										</div>
+										<div class="cell" data-id="tt-xor1-row2-cell1">
+										</div>
+										<div class="output cell" data-id="tt-xor1-row2-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor1-row2-cell-encrypted">
+											12cf
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor1-row1-cell0">
+										</div>
+										<div class="cell" data-id="tt-xor1-row1-cell1">
+										</div>
+										<div class="output cell" data-id="tt-xor1-row1-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor1-row1-cell-encrypted">
+											cd16
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-xor1-row0-cell0">
+										</div>
+										<div class="cell" data-id="tt-xor1-row0-cell1">
+										</div>
+										<div class="output cell" data-id="tt-xor1-row0-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-xor1-row0-cell-encrypted">
+											0d14
+										</div>
+									</div>
+								</div>
+			
+								<div class="truthtable" style="top: 125px; left: 1200px;">
+									<div class="header row">
+										<div class="cell" data-id="tt-and-header-cell0">
+											$X_0$
+										</div>
+										<div class="cell" data-id="tt-and-header-cell1">
+											$X_1$
+										</div>
+										<div class="output cell" data-id="tt-and-header-cell-output">
+											$X$
+										</div>
+										<div class="encrypted cell visible" data-id="tt-and-header-cell-encrypted">
+											<img src="img/lock/lock2.png" class="lock">
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-and-row2-cell0">
+										</div>
+										<div class="cell" data-id="tt-and-row2-cell1">
+										</div>
+										<div class="output cell" data-id="tt-and-row2-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-and-row2-cell-encrypted">
+											712a
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-and-row1-cell0">
+											<div class="fragment" data-fragment-index="4">
+												bd67
+											</div>
+										</div>
+										<div class="cell" data-id="tt-and-row1-cell1">
+											<div class="fragment" data-fragment-index="7">
+												19b6
+											</div>
+										</div>
+										<div class="output cell r-stack" data-id="tt-and-row1-cell-output">
+											<div class="fragment fade-out" data-fragment-index="8">
+												••••
+											</div>
+											<div class="fragment fade-in-then-out" data-fragment-index="8">
+												bbe9
+											</div>
+											<div class="fragment" data-fragment-index="9">
+												0
+											</div>
+										</div>
+										<div class="encrypted cell visible" data-id="tt-and-row1-cell-encrypted">
+											b49c
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-and-row3-cell0">
+										</div>
+										<div class="cell" data-id="tt-and-row3-cell1">
+										</div>
+										<div class="output cell" data-id="tt-and-row3-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-and-row3-cell-encrypted">
+											f4de
+										</div>
+									</div>
+									<div class="row">
+										<div class="cell" data-id="tt-and-row0-cell0">
+										</div>
+										<div class="cell" data-id="tt-and-row0-cell1">
+										</div>
+										<div class="output cell" data-id="tt-and-row0-cell-output">
+											••••
+										</div>
+										<div class="encrypted cell visible" data-id="tt-and-row0-cell-encrypted">
+											6f4e
+										</div>
+									</div>
+								</div>
 		
-										</code></pre>
-									</div>
-								</div>
+							</div>
+	
+							<aside class="notes">
+								<p>
+									After executing oblivious transfer, the IAEA has all the labels it needs: labels matching its own known values, and labels matching the facility's unknown values.
+									The IAEA can start walking through the circuit, successfully decrypting only one token for each gate.
+									This decrypted token reveals the label on that gate's output wire, which can then be used as a decryption key for the next gate.
+									Again, this process repeats for each gate in the circuit.
+									Finally, once the IAEA has the computed label on the circuit's output wire, it can share that label back to the facility so that the computation result becomes public. 
+								</p>
+								<p>
+									So now that we've covered the fundamental cryptography, let's get back to real implementations.
+								</p>
+							</aside>
+						</section>
+					</section>
+	
+	
+					<section id="codes">
+						<h1>Existing Frameworks</h1>
+						<div class="logos-container">
+							<div class="logos-container-row">
+								<img src="img/codes/fairplay.png" class="temp-tiny" alt="Fairplay logo">
+								<img src="img/codes/aby.png" class="temp-tiny" alt="ABY logo">
+							</div>
+							<div class="logos-container-row">
+								<img src="img/codes/mpyc.svg" class="temp-tiny" alt="MPyC logo">
+								<img src="img/codes/oblivc.png" class="temp-tiny" alt="Obliv-C logo">
+								<p>(and more...)</p>
 							</div>
 						</div>
 						<aside class="notes">
 							<p>
-								Now I confess, I'm not a cryptographer, just a nuclear engineer with a passion for reproducible computing.
+								I told you before that we wanted to be able to identify anomalies in radiation spectra, effectively demonstrating that MPC worked on safeguards data.
+								At the same time, knowing our audience of safeguards inspectors and data analysts, we recognized that if this was to ever be more than just a fun idea, we needed to be able to do it a way that was clear and convincing—especially to folks at the IAEA who might not be at the forefront of cryptographic research.
+								We surveyed available MPC software frameworks, and found a pretty wide range of options available, which is great!
 							</p>
 							<p>
-								Our prototype evaluates circuits successfully and securely, and while it is admittedly slow, it is <em>highly</em> accessible.
+								These were codes that satisfied our obvious criteria of being able to perform calculations correctly while keeping data private, but all of them presented other challenges...
 							</p>
 							<p>
-								Here is a quick snapshot showing how the whole process we just walked through can be encapsulated in just a few lines of Python.
-							</p>
-							<p>
-								The package is designed to be used by anyone who understands the fundamentals of garbled circuits, installed without any headaches, and inspected thoroughly at every step of the circuit evaluation process.
-							<p>
-							<p>
-								But finally, after development, the time came to begin testing garbled circuits on real-world time series anomaly detection datasets.
-							</p>
-							<p>
-								Now, the radiation spectra that we were looking at before tend to be large sets of data.
-								At each point in time one may monitor hundreds or thousands of "channels", each giving a count of how many radioactive particles are measured in some energy range.
+								Some were too limited in their ability to handle a challenge of this scope.
+								Some are no longer maintained.
+								Others are commercial, and so while potentially great for a contract down the line, they're not so great for a highly tailored demo with full transparency.
+								But most often, the codes were state-of-the-art research codes designed to showcase the latest development in the field, and were too sophisticated for building a demo aimed at a budget constrained inspectorate with a relatively limited base of expertise.
 							</p>
 						</aside>
 					</section>
-
-				</section>
+							
+					<section id="sok" data-background-color="#14A7A9">
 						
-				<section id="ecg">
-					<h1>ECG</h1>
-					<div class="cardiograms r-stack">
-						<img src="img/garbled-circuit-cardiogram.png" class="cardiogram" alt="cardiogram" data-id="ecg-plot">
-						<img src="img/garbled-circuit-cardiogram_anomaly.png" class="cardiogram fragment" alt="highlighted anomaly in cardiogram" data-id="ecg-plot" data-fragment-index="1">
-					</div>
-					<p class="fragment" data-fragment-index="1">Heartbeat Anomaly Detected</p>
-					<p class="attribution">Cardiogram data sourced from the Beth Israel Deaconness Congestive Heart Failure database</p>
-					<aside class="notes">
-						<p>
-							We started smaller, looking to find a univariate time series that we could analyze first as a test.
-							We settled on something outside the safeguards realm, but which I hope is easily relatable to you all in the audience.
-							An electrocardiogram signal; a heartbeat.
-						</p>
-						<p>
-							Here I've shown a sample of heartbeat data sourced from the Beth Israel Deaconness Congestive Heart Failure database.
-							It's pretty obvious just by looking at it to see where the anomaly is.
-							But for privacy preserving computation, we can't look at it.
-							Instead, we coded up a garbled circuit to analyze the cardiogram.
-							One party inputs their cardiogram data, the other party inputs parameters of the anomaly detection algorithm.
-						</p>
-						<p>
-							The result?
-							The garbled circuit identified the exact location of the anomaly, but never revealed the actual cardiogram heartbeat.
-						</p>
-					</aside>
-				</section>
-						
-				<section id="muse" data-background-color="#14A7A9">
-
-					<section data-auto-animate>
-						<div class="slide-content">
-							<h2 class="muse-name">Modeling Urban Scenarios and Experiments</h2>
-						</div>
-						<aside class="notes">
-							<p>
-								And so, with this successful result, we've pushed on to something far more relevant to nuclear safeguards.
-											 
-								Using a selection of data that was generously shared by a team at Oak Ridge National Lab working on the Modeling Urban Scenarios and Experiments project (or MUSE for short), we began applying garbled circuits to time series of radiation spectra.
-							</p>
-						</aside>
+						<section data-auto-animate>
+							<img src="img/sok-study.png" class="article" data-id="sok-paper">
+							<aside class="notes">
+								<p>
+									For perspective on this last point, there was a fantastic Systemization of Knowledge study published in 2019 by researchers at the University of Pennsylvania surveying a selection of MPC frameworks and related tools.
+									It estimated that learning, building, and testing their selection took 750 person hours (and even then, they didn't always succeed).
+									That's a computer science PhD candidate working for a month straight—no breaks, no weekends, no sleeping. 
+								</p>
+							</aside>
+						</section>
+	
+						<section data-auto-animate>
+							<div class="time">
+								<div class="hours" data-id="750-hours">750 hours</div>
+							</div>
+							<img src="img/sok-study.png" class="article" data-id="sok-paper">
+							<aside class="notes">
+								<p>
+									For perspective on this last point, there was a fantastic Systemization of Knowledge study published in 2019 by researchers at the University of Pennsylvania surveying a selection of MPC frameworks and related tools.
+									It estimated that learning, building, and testing their selection took 750 person hours (and even then, they didn't always succeed).
+									That's a computer science PhD candidate working for a month straight—no breaks, no weekends, no sleeping. 
+								</p>
+							</aside>
+						</section>
+	
+						<section data-auto-animate>
+							<div class="time">
+								<div class="hours faded" data-id="750-hours">750 hours</div>
+								<div class="days">31 ¼ days</div>
+							</div>
+							<img src="img/sok-study.png" class="article" data-id="sok-paper">
+							<aside class="notes">
+								<p>
+									For perspective on this last point, there was a fantastic Systemization of Knowledge study published in 2019 by researchers at the University of Pennsylvania surveying a selection of MPC frameworks and related tools.
+									It estimated that learning, building, and testing their selection took 750 person hours (and even then, they didn't always succeed).
+									That's a computer science PhD candidate working for a month straight—no breaks, no weekends, no sleeping. 
+								</p>
+							</aside>
+						</section>
+	
 					</section>
-
-					<section data-auto-animate>
-						<div class="slide-content">
-							<h1 class="muse-acronym">MUSE</h1>
-							<h2 class="muse-name">Modeling Urban Scenarios and Experiments</h2>
-						</div>
-						<aside class="notes">
-							<p>
-								And so, with this successful result, we've pushed on to something far more relevant to nuclear safeguards.
-											 
-								Using a selection of data that was generously shared by a team at Oak Ridge National Lab working on the Modeling Urban Scenarios and Experiments project (or MUSE for short), we began applying garbled circuits to time series of radiation spectra.
-							</p>
-						</aside>
-					</section>
-
-				</section>
-						
-				<section id="muse-schematic" data-background-color="#14A7A9">
-
-					<section data-auto-animate>
-
-						<h3 class="date">February 2019</h3>
-						<h4 class="location">Oak Ridge National Laboratory</h3>
-						<div class="schematic">
-
-							<div class="infrastructure">
-
-								<div class="building">
-									<img src="img/muse-schematic/redc.png" id="redc" alt="REDC">
-									<p id="redc-name" class="building-name">Lab<br>Facility</p>
-								</div>
-
-								<div class="road">
-									<div id="pa233-package" class="fragment" alt="material">
-										<div alt="pa233" class="fragment" data-id="material-name">
-											<sup>233</sup>Pa
+							
+					<section id="cyphercircuit"> 
+	
+						<section data-auto-animate>
+							<h1>CypherCircuit</h1>
+							<aside class="notes">
+								<p>
+									So we built a protoype of our own, a Python package called CypherCircuit.
+								</p>
+							</aside>
+						</section>
+	
+						<section data-auto-animate>
+							<h1>CypherCircuit</h1>
+							<div class="slide-content r-stack">
+								<div class="code-commentary fragment fade-out" data-fragment-index="1">
+									<p>Circuits can be built and evaluated in just a few lines of code.</p>
+									<div class="party-code short">
+										<div class="half-screen-code">
+											<h5>Facility</h5>
+											<pre><code class="python" data-trim>
+												# Build a circuit
+												circuit = CircuitBoard()
+												A, B = Wire(circuit), Wire(circuit)
+												OneBitComparator(A, B)
+				
+												# Run the protocol as the circuit generator
+												with Generator(circuit, evaluator_address) as facility:
+													vector = '1-'
+													facility.evaluate_protocol(vector)
+											</code></pre>
 										</div>
-										<img src="img/muse-schematic/tungsten-drum.png" id="tungsten-drum" alt="drum">
-									</div>
-								</div>
-
-								<div class="building">
-									<img src="img/muse-schematic/hfir.png" id="hfir" alt="HFIR">
-									<p id="hfir-name" class="building-name">Research<br>Reactor</p>
-								</div>
-
-							</div>
-
-							<img src="img/muse-schematic/nai-detector.png" id="nai-detector" alt="NaI detector">
-						</div>
-						<aside class="notes">
-							<p>
-								During February 2019, the MUSE team collected radiation data from along a stretch of road between an research reactor and another facility inside the lab.
-								We knew that at some point during the month, a metal drum containing a mixture that included a specific isotope of protactinium (that's elemental symbol Pa, and it has 233 protons and neutrons) was moved past a roadside detector. 
-							</p>
-						</aside>
-					</section>
-
-					<section data-auto-animate>
-
-						<h3 class="date">February 2019</h3>
-						<h4 class="location">Oak Ridge National Laboratory</h3>
-						<div class="schematic">
-
-							<div class="infrastructure">
-
-								<div class="building">
-									<img src="img/muse-schematic/redc.png" id="redc" alt="REDC">
-									<p id="redc-name" class="building-name">Lab<br>Facility</p>
-								</div>
-
-								<div class="road">
-									<div id="pa233-package" class="shipped" alt="material">
-										<div alt="pa233" data-id="material-name">
-											<sup>233</sup>Pa
+										<div class="half-screen-code">
+											<h5>Inspector</h5>
+											<pre><code class="python" data-trim>
+												# Run the protocol as the circuit evaluator
+												with Evaluator(circuit, generator_address) as inspector:
+													vector = '-0'
+													inspector.evaluate_protocol(vector)
+											</code></pre>
 										</div>
-										<img src="img/muse-schematic/tungsten-drum.png" id="tungsten-drum" alt="drum">
 									</div>
 								</div>
-
-								<div class="building">
-									<img src="img/muse-schematic/hfir.png" id="hfir" alt="HFIR">
-									<p id="hfir-name" class="building-name">Research<br>Reactor</p>
+								<div class="code-commentary fragment" data-fragment-index="1">
+									<p>Circuits can be explored and analyzed on the fly.</p>
+									<div class="party-code long">
+										<div class="half-screen-code">
+											<pre><code class="python" data-trim>
+												>>> wire0.value
+												>>> wire1.value
+												False
+				
+												>>> wire2.value
+												True
+				
+												>>> and_gate = And(wire1, wire2)
+												>>> and_gate.output_wire.value
+												False
+				
+												>>> and_gate.truthtable
+												W0001  W0002  |  W0003
+												——————————————————————
+												  0      0    |    0
+												  0      1    |    0
+												  1      0    |    0
+												  1      1    |    1
+											</code></pre>
+										</div>
+										<div class="half-screen-code">
+											<pre><code class="python" data-trim>
+												>>> and_gate.label()
+												>>> and_gate.labeltable()
+												 W0001    W0002   |   W0003
+												————————————————————————————
+												70850a…  b54f72…  |  e785bd…
+												70850a…  d430d6…  |  e785bd…
+												11faae…  b54f72…  |  e785bd…
+												11faae…  d430d6…  |  86fa19…
+			
+												>>> and_gate.garble()
+												>>> and_gate.tokentable
+												encrypted
+												—————————
+												 44e869…
+												 98ddc3…
+												 bf0f97…
+												 590a8a…
+			
+											</code></pre>
+										</div>
+									</div>
 								</div>
-
 							</div>
-
-							<img src="img/muse-schematic/nai-detector.png" id="nai-detector" alt="NaI detector">
+							<aside class="notes">
+								<p>
+									Now I confess, I'm not a cryptographer, just a nuclear engineer with a passion for reproducible computing.
+								</p>
+								<p>
+									Our prototype evaluates circuits successfully and securely, and while it is admittedly slow, it is <em>highly</em> accessible.
+								</p>
+								<p>
+									Here is a quick snapshot showing how the whole process we just walked through can be encapsulated in just a few lines of Python.
+								</p>
+								<p>
+									The package is designed to be used by anyone who understands the fundamentals of garbled circuits, installed without any headaches, and inspected thoroughly at every step of the circuit evaluation process.
+								<p>
+								<p>
+									But finally, after development, the time came to begin testing garbled circuits on real-world time series anomaly detection datasets.
+								</p>
+								<p>
+									Now, the radiation spectra that we were looking at before tend to be large sets of data.
+									At each point in time one may monitor hundreds or thousands of "channels", each giving a count of how many radioactive particles are measured in some energy range.
+								</p>
+							</aside>
+						</section>
+	
+					</section>
+							
+					<section id="ecg">
+						<h1>ECG</h1>
+						<div class="cardiograms r-stack">
+							<img src="img/garbled-circuit-cardiogram.png" class="cardiogram" alt="cardiogram" data-id="ecg-plot">
+							<img src="img/garbled-circuit-cardiogram_anomaly.png" class="cardiogram fragment" alt="highlighted anomaly in cardiogram" data-id="ecg-plot" data-fragment-index="1">
 						</div>
-
+						<p class="fragment" data-fragment-index="1">Heartbeat Anomaly Detected</p>
+						<p class="attribution">Cardiogram data sourced from the Beth Israel Deaconness Congestive Heart Failure database</p>
 						<aside class="notes">
 							<p>
-								Now, this protactinium isotope decays fairly quickly into an isotope of uranium that could be used to build a nuclear weapon.
-								That uranium isotope is exceedingly rare in the natural environment, so creating other materials that decay to it is the only viable means of production.
-								So, watching for the radiation signature of the short-lived protactinium is comparable to what an inspector might be interested in.
+								We started smaller, looking to find a univariate time series that we could analyze first as a test.
+								We settled on something outside the safeguards realm, but which I hope is easily relatable to you all in the audience.
+								An electrocardiogram signal; a heartbeat.
 							</p>
 							<p>
-								And so began our "blind" treasure hunt.
-								Could we identify the exact date and time when the protactinium past the detector, without ever actually "looking at" the detector's output?
+								Here I've shown a sample of heartbeat data sourced from the Beth Israel Deaconness Congestive Heart Failure database.
+								It's pretty obvious just by looking at it to see where the anomaly is.
+								But for privacy preserving computation, we can't look at it.
+								Instead, we coded up a garbled circuit to analyze the cardiogram.
+								One party inputs their cardiogram data, the other party inputs parameters of the anomaly detection algorithm.
+							</p>
+							<p>
+								The result?
+								The garbled circuit identified the exact location of the anomaly, but never revealed the actual cardiogram heartbeat.
 							</p>
 						</aside>
 					</section>
-
-				</section>
-
-				<section id="animation">
-					<h2>MUSE – Oblivious Safeguards Anomaly Detection</h2>
-					<video src="vid/pa233-muse.mp4" data-autoplay></video>
-					<p class="unit-note">keV: kiloelectronvolts</p>
-					<aside class="notes">
-						<p>
-							I'll show you.
-							<br>
-							<pause, start animation>
-						</p>
-						<p>
-							Here's an animation of just a few minutes of data collection on one morning in late February.
-							The animation is sped up, so you won't have to stay still quite that long.
-						</p>
-						<p>
-							On the left is the view that a facility might have.
-							The plot gives the radiation spectra that was actually measured—in this case the MUSE data.
-							You can hopefully see the jitter at the bottom of the plot—that's background radiation.
-							It's everywhere, all the time, including around you right now.
-							It's low enough that it has almost no impact on your life, but the detectors see it, and so our algorithms must filter it out.
-						</p>
-									
-						<p>
-							Then, on the right, is the view an inspector might have, using a garbled circuit.
-							At the top is a rough example of the "radiation signature" of the protactinium.
-							You can see the large peak at around 300 kiloelectronvolts (keV) and a smaller peak at around 400 keV.
-							That's what we've built the garbled circuit to look for.
-							(The lower energy peak is less likely to show up reliably in the detector, so we're ignoring that one.)
-							At the bottom is an indicator of whether the data input by the facility shows hints of protactinium. 
-							Green is good-to-go, <animation accelerating>
-							<halt!>And red is a anomaly.
-							Here, detected at 9:19 am.
-						</p>
-						<p>
-							It's a success! 
-						</p>
-					</aside>
-				</section>
-						
-				<section id="challenges">
-					<h1>Still to come...</h1>
-					<ul>
-						<li class="fragment">Enhanced efficiency</li>
-						<li class="fragment">Malicious adversaries</li>
-						<li class="fragment">Spoofed inputs</li>
-					</ul>
-					<aside class="notes">
-						<p>
-							Now, as I mentioned before, our package is fairly slow, and so our goal is to speed this up to something approaching real-time.
-							After that, ideally we move to implement the package as a "language" in-and-of-itself, akin to most of the existing frameworks available today where circuits can be built as computer code, not wire-by-wire, gate-by-gate, like I showed before.
-						</p>
-						<p>
-							There are also still some other obvious challenges that lay in front of us:
-						</p>
+							
+					<section id="muse" data-background-color="#14A7A9">
+	
+						<section data-auto-animate>
+							<div class="slide-content">
+								<h2 class="muse-name">Modeling Urban Scenarios and Experiments</h2>
+							</div>
+							<aside class="notes">
+								<p>
+									And so, with this successful result, we've pushed on to something far more relevant to nuclear safeguards.
+												 
+									Using a selection of data that was generously shared by a team at Oak Ridge National Lab working on the Modeling Urban Scenarios and Experiments project (or MUSE for short), we began applying garbled circuits to time series of radiation spectra.
+								</p>
+							</aside>
+						</section>
+	
+						<section data-auto-animate>
+							<div class="slide-content">
+								<h1 class="muse-acronym">MUSE</h1>
+								<h2 class="muse-name">Modeling Urban Scenarios and Experiments</h2>
+							</div>
+							<aside class="notes">
+								<p>
+									And so, with this successful result, we've pushed on to something far more relevant to nuclear safeguards.
+												 
+									Using a selection of data that was generously shared by a team at Oak Ridge National Lab working on the Modeling Urban Scenarios and Experiments project (or MUSE for short), we began applying garbled circuits to time series of radiation spectra.
+								</p>
+							</aside>
+						</section>
+	
+					</section>
+							
+					<section id="muse-schematic" data-background-color="#14A7A9">
+	
+						<section data-auto-animate>
+	
+							<h3 class="date">February 2019</h3>
+							<h4 class="location">Oak Ridge National Laboratory</h3>
+							<div class="schematic">
+	
+								<div class="infrastructure">
+	
+									<div class="building">
+										<img src="img/muse-schematic/redc.png" id="redc" alt="REDC">
+										<p id="redc-name" class="building-name">Lab<br>Facility</p>
+									</div>
+	
+									<div class="road">
+										<div id="pa233-package" class="fragment" alt="material">
+											<div alt="pa233" class="fragment" data-id="material-name">
+												<sup>233</sup>Pa
+											</div>
+											<img src="img/muse-schematic/tungsten-drum.png" id="tungsten-drum" alt="drum">
+										</div>
+									</div>
+	
+									<div class="building">
+										<img src="img/muse-schematic/hfir.png" id="hfir" alt="HFIR">
+										<p id="hfir-name" class="building-name">Research<br>Reactor</p>
+									</div>
+	
+								</div>
+	
+								<img src="img/muse-schematic/nai-detector.png" id="nai-detector" alt="NaI detector">
+							</div>
+							<aside class="notes">
+								<p>
+									During February 2019, the MUSE team collected radiation data from along a stretch of road between an research reactor and another facility inside the lab.
+									We knew that at some point during the month, a metal drum containing a mixture that included a specific isotope of protactinium (that's elemental symbol Pa, and it has 233 protons and neutrons) was moved past a roadside detector. 
+								</p>
+							</aside>
+						</section>
+	
+						<section data-auto-animate>
+	
+							<h3 class="date">February 2019</h3>
+							<h4 class="location">Oak Ridge National Laboratory</h3>
+							<div class="schematic">
+	
+								<div class="infrastructure">
+	
+									<div class="building">
+										<img src="img/muse-schematic/redc.png" id="redc" alt="REDC">
+										<p id="redc-name" class="building-name">Lab<br>Facility</p>
+									</div>
+	
+									<div class="road">
+										<div id="pa233-package" class="shipped" alt="material">
+											<div alt="pa233" data-id="material-name">
+												<sup>233</sup>Pa
+											</div>
+											<img src="img/muse-schematic/tungsten-drum.png" id="tungsten-drum" alt="drum">
+										</div>
+									</div>
+	
+									<div class="building">
+										<img src="img/muse-schematic/hfir.png" id="hfir" alt="HFIR">
+										<p id="hfir-name" class="building-name">Research<br>Reactor</p>
+									</div>
+	
+								</div>
+	
+								<img src="img/muse-schematic/nai-detector.png" id="nai-detector" alt="NaI detector">
+							</div>
+	
+							<aside class="notes">
+								<p>
+									Now, this protactinium isotope decays fairly quickly into an isotope of uranium that could be used to build a nuclear weapon.
+									That uranium isotope is exceedingly rare in the natural environment, so creating other materials that decay to it is the only viable means of production.
+									So, watching for the radiation signature of the short-lived protactinium is comparable to what an inspector might be interested in.
+								</p>
+								<p>
+									And so began our "blind" treasure hunt.
+									Could we identify the exact date and time when the protactinium past the detector, without ever actually "looking at" the detector's output?
+								</p>
+							</aside>
+						</section>
+	
+					</section>
+	
+					<section id="animation">
+						<h2>MUSE – Oblivious Safeguards Anomaly Detection</h2>
+						<video src="vid/pa233-muse.mp4" data-autoplay></video>
+						<p class="unit-note">keV: kiloelectronvolts</p>
+						<aside class="notes">
+							<p>
+								I'll show you.
+								<br>
+								<pause, start animation>
+							</p>
+							<p>
+								Here's an animation of just a few minutes of data collection on one morning in late February.
+								The animation is sped up, so you won't have to stay still quite that long.
+							</p>
+							<p>
+								On the left is the view that a facility might have.
+								The plot gives the radiation spectra that was actually measured—in this case the MUSE data.
+								You can hopefully see the jitter at the bottom of the plot—that's background radiation.
+								It's everywhere, all the time, including around you right now.
+								It's low enough that it has almost no impact on your life, but the detectors see it, and so our algorithms must filter it out.
+							</p>
+										
+							<p>
+								Then, on the right, is the view an inspector might have, using a garbled circuit.
+								At the top is a rough example of the "radiation signature" of the protactinium.
+								You can see the large peak at around 300 kiloelectronvolts (keV) and a smaller peak at around 400 keV.
+								That's what we've built the garbled circuit to look for.
+								(The lower energy peak is less likely to show up reliably in the detector, so we're ignoring that one.)
+								At the bottom is an indicator of whether the data input by the facility shows hints of protactinium. 
+								Green is good-to-go, <animation accelerating>
+								<halt!>And red is a anomaly.
+								Here, detected at 9:19 am.
+							</p>
+							<p>
+								It's a success! 
+							</p>
+						</aside>
+					</section>
+							
+					<section id="challenges">
+						<h1>Still to come...</h1>
 						<ul>
-							<li>
-								How will we deal with malicious adversaries?
-								These are participants who might try to subvert the calculation by not following the rules of garbled circuits. Fortunately, this is a problem that has generally been solved in the literature, and so we'd just need to build it into our own methods.
-							</li>
-							<li>
-								Perhaps more importantly, can we prevent parties from spoofing their input data? Garbage in, garbage out as the saying goes, but adding techniques like commitment schemes to the procedure could ensure that when a party enters data, it becomes immutable, enabling the inspector to return and verify it's authenticity at some point in the future if its deemed necessary.
-							</li>
+							<li class="fragment">Enhanced efficiency</li>
+							<li class="fragment">Malicious adversaries</li>
+							<li class="fragment">Spoofed inputs</li>
 						</ul>
-					</aside>
-				</section>
-						
-				<section id="closing" data-background-color="black">
-					<aside class="notes">
+						<aside class="notes">
 							<p>
-								Despite these challenges, I believe that this technology is needed now more than ever.
-								As international relationships are becoming increasingly strained, the ability to use trustless, privacy preserving systems may allow us to maintain relationships and international cooperation around nuclear safeguards.
-								Hopefully they even present the opportunity to rebuild trust between nations that may not currently see eye-to-eye.
+								Now, as I mentioned before, our package is fairly slow, and so our goal is to speed this up to something approaching real-time.
+								After that, ideally we move to implement the package as a "language" in-and-of-itself, akin to most of the existing frameworks available today where circuits can be built as computer code, not wire-by-wire, gate-by-gate, like I showed before.
 							</p>
-							<p>		
-								And so, for all you nuclear inspectors in the audience, let's consider where MPC might fit into the IAEA's future operations.
-								For anyone who's left, <em>I</em> believe that MPC could have applications in almost every aspect of modern life, and so I challenge you to think about where and when you might desire privacy-preserving computation in your own daily routine.
-								Then, I hope you'll push for MPC to go mainstream.
+							<p>
+								There are also still some other obvious challenges that lay in front of us:
 							</p>
-					</aside>
-				</section>
-
-				<section id="credits" data-background-color="#14A7A9">
-					<div class="slide-content">
-						<p>This research was advised by Dr. Rachel Slaybaugh (UC Berkeley) and Dr. David Farley (Sandia National Laboratories).</p>
-						<p>
-							Sandia National Laboratories is a multimission laboratory managed and operated by National Technology & Engineering Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International Inc., for the U.S. Department of Energy’s National Nuclear Security Administration under contract DE-NA0003525.
-						</p>
-						<p>
- 							We acknowledge the support of the NA-22 Office of Proliferation Detection (NA-221) and especially that of the NA-221/Safeguards Program manager, Dr. Chris Ramos, in funding this work.
-						</p>
-						<p>
-							Special thanks goes to Jared Johnson, Andrew Nicholson, Daniel Archer, Michael Willis, Irakli Garishvili, Andrew Rowe, Ian Stewart, and James Ghawaly developing, curating, and providing access to the MUSE dataset.
-						</p>
-						<p>Approved for unlimited unclassified release (SAND2021-0391 C).</p>
-						<p class="contact">Get in touch with Mitch by reaching out to <b>negus@berkeley.edu</b></p>
-					</div>
-					<img src="img/enigma/wordmark-white.png" class="logo" alt="Enigma wordmark">
-				</section>
-
-				<section id="attribution" data-background-color="#14A7A9">
-					<h4>Image Attributions</h4>
-					<ul>
-						<li>"WTC smoking on 9-11", <a href="https://commons.wikimedia.org/wiki/File:WTC_smoking_on_9-11.jpeg">Michael Foran</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</li>
-						<li>"Boston Marathon explosions", <a href="https://commons.wikimedia.org/wiki/File:Boston_Marathon_explosions_(8653921886).jpg">Aaron &quot;tango&quot; Tang from Cambridge, MA, USA</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</li>
-						<li>"IAEA Inspectors", <a href="https://commons.wikimedia.org/wiki/File:IAEAinspectors.jpg">Dean Calma</a>, Attribution, via Wikimedia Commons</li>
-						<li>"IAEA Mass Spectrometry", Dean Calma/IAEA, Attribution-NonCommercial-NoDerivs 2.0 Generic (<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>), via Flickr</li>
-						<li>"IAEA Headquarters", Rodolfo Quevenco/IAEA, Attribution-ShareAlike 2.0 Generic (<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>), via Flickr</li>
-						<li>"NPT Signatories", <a href="https://commons.wikimedia.org/wiki/File:NPT_parties.svg">File:NPT Participation.svg: Allstar86, L.tak, Danlaycockderivative work: Danlaycock</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</li> (edited to separate figure from legend)
-						<li>"Gamma spectrum of the shown Uranium...", <a href="https://commons.wikimedia.org/wiki/File:Gammaspektrum_Uranerz.jpg">Wusel007</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</li> (edited to replace uranium image and improve resolution of fonts)
-						<li>"Uranium Ore", <a href="https://commons.wikimedia.org/wiki/File:Uraniumore.jpg">Andrew Silver, USGS</a>, Public domain, via Wikimedia Commons</li>
-					</ul>
-				</section>
-
+							<ul>
+								<li>
+									How will we deal with malicious adversaries?
+									These are participants who might try to subvert the calculation by not following the rules of garbled circuits. Fortunately, this is a problem that has generally been solved in the literature, and so we'd just need to build it into our own methods.
+								</li>
+								<li>
+									Perhaps more importantly, can we prevent parties from spoofing their input data? Garbage in, garbage out as the saying goes, but adding techniques like commitment schemes to the procedure could ensure that when a party enters data, it becomes immutable, enabling the inspector to return and verify it's authenticity at some point in the future if its deemed necessary.
+								</li>
+							</ul>
+						</aside>
+					</section>
+							
+					<section id="closing" data-background-color="black">
+						<aside class="notes">
+								<p>
+									Despite these challenges, I believe that this technology is needed now more than ever.
+									As international relationships are becoming increasingly strained, the ability to use trustless, privacy preserving systems may allow us to maintain relationships and international cooperation around nuclear safeguards.
+									Hopefully they even present the opportunity to rebuild trust between nations that may not currently see eye-to-eye.
+								</p>
+								<p>		
+									And so, for all you nuclear inspectors in the audience, let's consider where MPC might fit into the IAEA's future operations.
+									For anyone who's left, <em>I</em> believe that MPC could have applications in almost every aspect of modern life, and so I challenge you to think about where and when you might desire privacy-preserving computation in your own daily routine.
+									Then, I hope you'll push for MPC to go mainstream.
+								</p>
+						</aside>
+					</section>
+	
+					<section id="credits" data-background-color="#14A7A9">
+						<div class="slide-content">
+							<p>This research was advised by Dr. Rachel Slaybaugh (UC Berkeley) and Dr. David Farley (Sandia National Laboratories).</p>
+							<p>
+								Sandia National Laboratories is a multimission laboratory managed and operated by National Technology & Engineering Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International Inc., for the U.S. Department of Energy’s National Nuclear Security Administration under contract DE-NA0003525.
+							</p>
+							<p>
+	 							We acknowledge the support of the NA-22 Office of Proliferation Detection (NA-221) and especially that of the NA-221/Safeguards Program manager, Dr. Chris Ramos, in funding this work.
+							</p>
+							<p>
+								Special thanks goes to Jared Johnson, Andrew Nicholson, Daniel Archer, Michael Willis, Irakli Garishvili, Andrew Rowe, Ian Stewart, and James Ghawaly developing, curating, and providing access to the MUSE dataset.
+							</p>
+							<p>Approved for unlimited unclassified release (SAND2021-0391 C).</p>
+							<p class="contact">Get in touch with Mitch by reaching out to <b>negus@berkeley.edu</b></p>
+						</div>
+						<img src="img/enigma/wordmark-white.png" class="logo" alt="Enigma wordmark">
+					</section>
+	
+					<section id="attribution" data-background-color="#14A7A9">
+						<h4>Image Attributions</h4>
+						<ul>
+							<li>"WTC smoking on 9-11", <a href="https://commons.wikimedia.org/wiki/File:WTC_smoking_on_9-11.jpeg">Michael Foran</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</li>
+							<li>"Boston Marathon explosions", <a href="https://commons.wikimedia.org/wiki/File:Boston_Marathon_explosions_(8653921886).jpg">Aaron &quot;tango&quot; Tang from Cambridge, MA, USA</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</li>
+							<li>"IAEA Inspectors", <a href="https://commons.wikimedia.org/wiki/File:IAEAinspectors.jpg">Dean Calma</a>, Attribution, via Wikimedia Commons</li>
+							<li>"IAEA Mass Spectrometry", Dean Calma/IAEA, Attribution-NonCommercial-NoDerivs 2.0 Generic (<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>), via Flickr</li>
+							<li>"IAEA Headquarters", Rodolfo Quevenco/IAEA, Attribution-ShareAlike 2.0 Generic (<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>), via Flickr</li>
+							<li>"NPT Signatories", <a href="https://commons.wikimedia.org/wiki/File:NPT_parties.svg">File:NPT Participation.svg: Allstar86, L.tak, Danlaycockderivative work: Danlaycock</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</li> (edited to separate figure from legend)
+							<li>"Gamma spectrum of the shown Uranium...", <a href="https://commons.wikimedia.org/wiki/File:Gammaspektrum_Uranerz.jpg">Wusel007</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</li> (edited to replace uranium image and improve resolution of fonts)
+							<li>"Uranium Ore", <a href="https://commons.wikimedia.org/wiki/File:Uraniumore.jpg">Andrew Silver, USGS</a>, Public domain, via Wikimedia Commons</li>
+						</ul>
+					</section>
+	
+				</div>
 			</div>
 		</div>
 
+		<script src="js/timelock.js"></script>
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
