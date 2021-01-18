@@ -1,3 +1,10 @@
+# No Data, No Problem
+
+## Giving nuclear inspectors better tools without revealing state secrets.
+
+This presentation was given by Mitch Negus at [Enigma 2021](https://www.usenix.org/conference/enigma2021). 
+It is built using reveal.js (this repository is based on the reveal.js source code). 
+
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text.svg" alt="reveal.js" width="450">
