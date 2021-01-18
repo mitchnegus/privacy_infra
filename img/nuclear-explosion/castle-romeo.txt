@@ -1,0 +1,14 @@
+Page URL:
+https://commons.wikimedia.org/wiki/File:Castle_Romeo.jpg
+
+Permalink:
+https://commons.wikimedia.org/w/index.php?title=File:Castle_Romeo.jpg&oldid=521890358
+
+File upload:
+https://upload.wikimedia.org/wikipedia/commons/1/19/Castle_Romeo.jpg
+
+Attribution:
+<a href="https://commons.wikimedia.org/wiki/File:Castle_Romeo.jpg">United States Department of Energy</a>, Public domain, via Wikimedia Commons
+
+Embed:
+<a title="United States Department of Energy, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Castle_Romeo.jpg"><img width="256" alt="Castle Romeo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Castle_Romeo.jpg/256px-Castle_Romeo.jpg"></a>

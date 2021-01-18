@@ -1,0 +1,17 @@
+Page URL:
+https://commons.wikimedia.org/wiki/File:Gammaspektrum_Uranerz.jpg
+
+Permalink:
+https://commons.wikimedia.org/w/index.php?title=File:Gammaspektrum_Uranerz.jpg&oldid=477620226
+
+File upload:
+https://upload.wikimedia.org/wikipedia/commons/8/8c/Gammaspektrum_Uranerz.jpg
+
+Attribution:
+<a href="https://commons.wikimedia.org/wiki/File:Gammaspektrum_Uranerz.jpg">Wusel007</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
+
+Embed:
+<a title="Wusel007, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Gammaspektrum_Uranerz.jpg"><img width="512" alt="Gammaspektrum Uranerz" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Gammaspektrum_Uranerz.jpg/512px-Gammaspektrum_Uranerz.jpg"></a>
+
+Edits:
+Removed uranium ore image; changed font of axis labels/tick-labels/text annotations; minor cropping

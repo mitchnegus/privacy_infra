@@ -1,0 +1,970 @@
+/******************************************
+ *              ENIGMA CSS
+ *
+ *  This CSS file builds off styles defined
+ *  in `css/themes/source/enigma.scss`.
+ ******************************************/
+
+.reveal-viewport {
+	background: url('../img/enigma/enigma-background.png');
+	background-size: cover;
+}
+
+.reveal h1 {
+	font-size: 80pt;
+	text-transform: none;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5 {
+	text-transform: none;
+}
+
+.reveal .slide-number {
+	right: 97%;
+	font-size: 16pt;
+}
+
+
+/* 
+ * More fragment animations
+ */
+.reveal .slides section .fragment.fade-semi-out {
+	opacity: 1;
+	visibility: inherit;
+}
+
+.reveal .slides section .fragment.fade-semi-out.visible {
+	opacity: 0.5;
+	visibility: inherit;
+}
+
+.reveal .slides section .wrapper.fragment {
+	opacity: 1;
+	visibility: inherit;
+}
+
+
+
+/*
+ * Common characteristics
+ */
+
+.inactive-text {
+	font-color: gray;
+}
+
+.faded {
+	opacity: 0.5;
+}
+
+.truthtable {
+	width: min-content;	
+	border: 2px solid white;
+	background-color: rgba(30, 30, 30, 0.2);
+}
+
+.truthtable .row {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.truthtable .row.header {
+	border-bottom: 3px solid white;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.truthtable .cell {
+	height: 100%;
+	width: 120px;
+	font-size: 24pt;
+	text-align: center;
+	line-height: 32pt;
+	letter-spacing: 1px;
+	vertical-align: bottom;
+}
+
+.truthtable .cell.output {
+	border-left: 1px solid white;
+}
+
+.truthtable .encrypted.cell {
+	width: 0;
+}
+
+.truthtable .encrypted.cell.visible {
+	width: 120px;
+	border-left: 1px solid white;
+}
+
+.truthtable .encrypted.cell .lock {
+	height: 80%;
+	width: auto;
+	margin: 5px auto;
+}
+
+.truthtable.highlight {
+	box-shadow: 0 0 15px 5px white;
+}
+
+
+/*
+ * Cover slide 
+ */
+
+#cover {
+	height: 100%;
+}
+
+#cover .slide-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 0 2%;
+}
+
+#cover .title h1,
+#cover .title h3 {
+}
+
+#cover .title h1 {
+	color: white;
+	font-size: 72pt;
+	text-transform: uppercase;
+}
+
+#cover .title h3 {
+	margin-top: 2%;
+	color: #eeeeee;
+	font-size: 36pt;
+	font-weight: 500;
+	letter-spacing: -1px;
+}
+
+#cover .author p {
+	margin: 0;
+	color: #eeeeee;
+	font-size: 24pt;
+	text-align: left;
+}
+
+#cover .author .name {
+	color: white;
+	font-size: 32pt;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#cover .footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#cover .release-number {
+	font-size: 18pt;
+	opacity: 0.5;
+}
+
+
+/* 
+ * Opening slide
+ */
+
+#opening img {
+	height: 100%;
+}
+
+
+/*
+ * "Inspectors" slide
+ */
+
+#inspectors .slide-content {
+	height: 100%;
+}
+
+#inspectors h5 {
+	text-transform: none;
+}
+
+#inspectors .inspector-images {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+#inspectors img {
+	height: 675px;
+	border: 3px solid #dddddd;
+}
+
+/*
+ * "IAEA" slide
+ */
+
+#iaea-logo {
+	width: 30%;
+}
+
+
+/*
+ * "NPT" slide
+ */
+
+#npt #signatory-map {
+	width: 80%;
+}
+
+
+/*
+ * "MPC" slide 
+ */
+
+#mpc h1 {
+	margin: -100px 0;
+	font-size: 360pt;
+}
+
+#mpc p {
+	margin-top: 150px;
+	font-size: 44pt;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+#mpc .venn-diagram {
+	display: flex;
+	justify-content: center;
+}
+
+#mpc .venn-diagram.separated {
+	justify-content: space-around;
+}
+
+#mpc .venn-diagram.raised {
+	margin-top: -100px;
+}
+
+
+#mpc .venn-diagram .circle {
+	height: 600px;
+	width: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid white;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: white;
+	font-weight: bold;
+}
+
+#mpc .venn-diagram .circle div {
+	font-size: 48pt;
+}
+
+#mpc .venn-diagram .small.circle {
+	height: 200px;
+	width: 200px;
+	border: 1px solid white;
+	font-size: 16pt;
+}
+
+#mpc .venn-diagram .circle.left {
+	margin-right: -150px;
+}
+
+#mpc .venn-diagram .small.circle.left {
+	margin-right: -50px;
+}
+
+
+/*
+ * "MPC History" slide
+ */
+
+#mpc-history h1 {
+	margin-bottom: 50px;
+	font-size: 60pt;
+}
+
+
+/*
+ * "Big-Questions" slide 
+ */
+
+.big-questions .question {
+	margin: 100px 0;
+	color: #444444;
+	font-size: 60pt;
+}
+
+.big-questions .highlight {
+	color: #14A7A9;
+	font-weight: bold;
+}
+
+.big-questions .grown {
+	transform: scale(1.3);
+}
+
+
+/*
+ * "Radiation Sepctra" slide
+ */
+
+#radiation-spectra {
+	height: 100%;
+}
+
+#radiation-spectra .slide-content {
+	height: 100%;
+}
+
+#radiation-spectra .uranium {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#radiation-spectra #uranium-ore-spectrum {
+	width: 60%;
+}
+
+#radiation-spectra #uranium-ore-sample {
+	width: 30%;
+	margin-top: 150px;
+	border: 3px solid #cccccc;
+}
+
+#radiation-spectra .unit-note {
+	position: absolute;
+	top: 93%;
+	left: 30%;
+	font-size: 20pt;
+	color: #aaaaaa;
+}
+
+
+/*
+ * "Impediments" slide
+ */
+
+#impediments .slide-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 150px;
+	color: #444444;
+}
+
+#impediments p {
+	width: 100%;
+	font-size: 40pt;
+	font-weight: bold;
+	text-align: left;
+}
+
+#impediments ol {	
+	list-style-type: none;
+}
+
+#impediments li {
+	display: flex;
+	font-size: 36pt;
+	margin: 50px 0;
+}
+
+#impediments li.short {
+	width: 70%;
+}
+
+#impediments .bullet-image {
+	margin-right: 20px;
+}
+
+#impediments .info {
+	margin-top: 10px;
+	font-size: 28pt;
+	opacity: 0.8;
+}
+
+
+/*
+ * "Digital Circuits" slide 
+ */
+
+#digital-circuits .title {
+	margin-top: -5%;
+	font-size: 36pt;
+}
+
+#digital-circuits .comparator {
+	width: 60%;
+}
+
+#digital-circuits .washout {
+	opacity: 0.20
+}
+
+#digital-circuits .text-overlay {
+	margin: auto 0;
+	font-size: 36pt;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+
+/*
+ * "Two Parties" slide 
+ */
+
+#party-inputs .title {
+	display: flex;
+	justify-content: center;
+}
+
+#party-inputs {
+	height: 100%;
+	font-size: 100pt;
+}
+
+#party-inputs section {
+	height: 100%;
+}
+
+#party-inputs .title {
+	display: flex;
+	align-items: center;
+	font-size: 80pt;
+}
+
+#party-inputs .title h1 {
+	margin-bottom: 0;
+}
+
+#party-inputs .info {
+	height: 75%;
+	display: flex;
+	justify-content: center;
+	margin: 100px 0 0;
+}
+
+#party-inputs ol {
+	height: 100%;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#party-inputs li {
+	margin: 30px 0;
+}
+
+#party-inputs .party {
+	display: flex;
+}
+
+#party-inputs .equivalence {
+	align-self: center;
+}
+
+#two-parties .party {
+	justify-content: space-between;
+}
+
+#circuit-inputs .equivalence {
+	align-self: flex-start;
+}
+
+#circuit-inputs .examples {
+	display: flex;
+}
+
+#circuit-inputs .bracket {
+	font-size: 320pt;
+}
+
+#circuit-inputs .binary {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 100px;
+	font-size: 72pt;
+}
+
+/*
+ * "Circuit Inputs" slide 
+ */
+
+#circuit-inputs1 .slide-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#circuit-inputs1 .numbers {
+	list-style-type: none;
+}
+
+#circuit-inputs1 .numbers li {
+	display: flex;
+	align-items: center;
+	font-size: 100pt;
+}
+
+#circuit-inputs1 .numbers .name {
+	margin-bottom: 30px;
+	font-size: 60pt;
+}
+
+
+#circuit-inputs1 .numbers.left li {
+	flex-direction: row;
+}
+
+#circuit-inputs .numbers.right li {
+	flex-direction: row-reverse;
+}
+
+#circuit-inptus .numbers div {
+	display: flex;
+	align-items: center
+}
+
+#circuit-inputs .numbers .base10 {
+	font-weight: bold;
+}
+
+#circuit-inputs .numbers .binary {
+	margin: 0 150px;
+	font-family: monospace;
+	letter-spacing: -1px;
+}
+
+
+/* 
+ * "Equality Circuit" slide(s)
+ */
+
+.equality-circuit,
+.equality-circuit section {
+	height: 100%;
+}
+
+.equality-circuit .slide-content {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.equality-circuit .viewpoint {
+	position: absolute;
+	bottom: 75px;
+	left: 75px;
+	font-size: 20pt;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.equality-circuit .definitions {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 160px;
+	margin-right: 100px;
+}
+
+.equality-circuit .definition {
+	width: 100%;
+	margin: 10px 0;
+	text-align: left;
+	font-size: 36pt;
+}
+
+.equality-circuit .circuit-diagram {
+	width: 70%;
+}
+
+.equality-circuit .circuit-diagram img {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+}
+
+.equality-circuit .truthtable {
+	position: absolute;
+}
+
+/*
+ * "OT" slide
+ */
+
+#ot {
+	height: 100%;
+}
+
+#ot .slide-content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#ot #ot-graphic {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 150px;
+	padding: 0 200px;
+}
+
+#ot .party {
+	flex: 1;
+	font-size: 40pt;
+}
+
+#ot .party h5 {
+	width: 100%;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#ot .action {
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ot .label,
+#ot .labels {
+	min-width: 300px;
+	text-align: left;
+}
+
+#ot .arrow {
+	margin: 0 40px;
+}
+
+#ot .black-box {
+	height: 400px;
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 30px;
+	background-color: black;
+	color: white;
+	font-size: 120pt;
+	text-align: center;
+}
+
+
+/*
+ * "Codes" slide
+ */
+
+#codes .logos-container {
+	width: 80%;
+	margin: 100px auto;
+}
+
+#codes .logos-container img {
+	height: 125px;
+	margin: 50px; 50px;
+}
+
+#codes p {
+	color: gray;
+}
+
+
+/*
+ * "SoK" slide 
+ */
+
+#sok {
+	font-size: 120pt;
+}
+
+#sok img.article {
+	width: 60%;
+	margin-top: 10%;
+	box-shadow: 5px 5px 10px black;
+	overflow: hidden;
+}
+
+#sok .time {
+	display: flex;
+	justify-content: center;
+	margin-top: 20%;
+}
+
+#sok .time div {
+	margin: 0 20px;
+}
+
+#sok .days {
+	font-weight: bold;
+}
+
+/*
+ * "CypherCircuit" slide
+ */
+
+#cyphercircuit {
+	width: 100%;
+}
+
+#cyphercircuit h1 {
+	margin-bottom: 50px;
+}
+
+#cyphercircuit p {
+	margin-bottom: 100px;
+}
+
+#cyphercircuit pre {
+	height: 100%;
+}
+
+#cyphercircuit code {
+	padding: 30px;
+	height: 100%;
+	border: 2px solid gray;
+	box-shadow: 3px 3px 5px gray;
+}
+
+#cyphercircuit .slide-content {
+	width: 100%;
+}
+
+#cyphercircuit .code-commentary {
+	height: 100%;
+	width: 100%;
+}
+
+.party-code {
+	display: flex;
+}
+
+.party-code.short {
+	height: 250px;
+}
+
+.party-code.long {
+	height: 600px;
+}
+
+.half-screen-code {
+	width: 50%;
+	height: 100%;
+}
+
+
+/*
+ * "ECG" slide
+ */
+
+#ecg {
+	width: 100%;
+}
+
+#ecg .cardiograms {
+	width: 100%;
+}
+
+#ecg .cardiogram {
+	width: 100%;
+}
+
+#ecg .attribution {
+	margin-top: 90px;
+	color: #aaaaaa;
+	font-size: 20pt;
+}
+
+/*
+ * "MUSE" slide
+ */
+
+#muse .slide-content {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#muse .muse-name {
+	font-size: 40pt;
+	letter-spacing: 4px;
+}
+
+#muse .muse-acronym {
+	margin: -50px 0;
+	font-size: 348pt;
+}
+
+
+/*
+ * "MUSE Schematic" slide
+ */
+
+#muse-schematic .infrastructure {
+	display: flex;
+	justify-content: space-between;
+	padding: 5% 5%;
+}
+
+#muse-schematic .building {
+	position: relative;
+	height: auto;
+	width: 500px;
+}
+
+#muse-schematic .building-name {
+	position: absolute;
+}
+
+#muse-schematic #redc-name {
+	top: 290px;
+	width: 100%;
+	text-align: center;
+}
+
+#muse-schematic #hfir-name {
+	top: 260px;
+	left: -20px;
+	width: 100%;
+	text-align: center;
+}
+
+#muse-schematic .road {
+	display: flex;
+	flex: 1;
+	align-items: flex-end;
+	margin-bottom: 75px;
+	border-bottom: 10px solid white;
+}
+
+#muse-schematic #nai-detector {
+	width: 400px;
+	margin-top: -100px;
+}
+
+#muse-schematic #pa233-package.shipped {
+	margin-left: auto;
+}
+
+#muse-schematic #tungsten-drum {
+	width: 100px;
+}
+
+
+/*
+ * "Animation" slide
+ */
+
+#animation video {
+	margin: 50px 0;
+}
+
+#animation .unit-note {
+	width: 100%;
+	padding: 0 100px;
+	font-size: 20pt;
+	color: #aaaaaa;
+	text-align: left;
+}
+
+
+/*
+ * "Challenges" slide
+ */
+
+#challenges ul {
+	margin-top: 50px;
+	font-size: 60pt;
+}
+
+#challenges li {
+	margin: 50px 0;
+}
+
+
+/*
+ * "Credits" slide
+ */
+
+#closing {
+	height: 100%;
+}
+
+
+/*
+ * "Credits" slide
+ */
+
+#credits {
+	width: 100%;
+}
+
+#credits p {
+	width: 75%;
+	margin: 30px 0;
+	font-size: 20pt;
+	text-align: justify;
+}
+
+#credits .slide-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#credits .contact {
+	margin: 60px 0 0;
+}
+
+#credits .logo {
+	width: 500px;
+	margin-top: 100px;
+}
+
+
+/*
+ * "Attribution" slide
+ */
+
+#attribution {
+	width: 100%;
+	font-size: 24pt;
+}
+
+#attribution a {
+	color: inherit;
+}
+
+#attribution ul {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+
+#attribution li {
+	width: 100%;
+	margin: 10px 0;
+}
