@@ -10,20 +10,27 @@
 	background-size: cover;
 }
 
-.reveal h1 {
+.enigma.reveal {
+	font-family: Arial,
+							 'Source Sans Pro',
+							 Helvetica,
+							 sans-serif;
+}
+
+.enigma.reveal h1,
+.enigma.reveal h2,
+.enigma.reveal h3,
+.enigma.reveal h4,
+.enigma.reveal h5,
+.enigma.reveal h6 {
+	text-transform: none;
+}
+
+.enigma.reveal h1 {
 	font-size: 80pt;
-	text-transform: none;
 }
 
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5 {
-	text-transform: none;
-}
-
-.reveal .slide-number {
+.enigma.reveal .slide-number {
 	right: 97%;
 	font-size: 16pt;
 }
