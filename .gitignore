@@ -1,3 +1,6 @@
+# Vim swap files
+*.swp
+
 # Image/Video creation documents
 img/creation
 vid/creation
