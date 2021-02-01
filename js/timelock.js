@@ -4,7 +4,7 @@
 
 (function () {
 
-	const end = new Date(2021, 1, 1, 11, 30, 0);
+	const end = new Date(Date.UTC(2021, 1, 1, 19, 30, 0));
 	const now = new Date();
 
 	// If the end of the lock time period is still in the future, hide the content
