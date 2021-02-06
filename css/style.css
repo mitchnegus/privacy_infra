@@ -238,6 +238,10 @@
 	height: 100%;
 }
 
+#opening .warning {
+	color: white;
+}
+
 
 /*
  * "Inspectors" slide
