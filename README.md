@@ -5,6 +5,13 @@
 This presentation was given by Mitch Negus at [Enigma 2021](https://www.usenix.org/conference/enigma2021). 
 It is built using reveal.js (this repository is based on the reveal.js source code). 
 
+Slides can be generated using [DeckTape](), a high-quality PDF exporter for HTML presentation frameworks.
+Using the provided Makefile, run:
+```
+make slides
+```
+(Note: You may need to adjust the `CHROME_PATH` variable to point to the location where Google Chrome is installed on your system.)
+
 ---
 
 <p align="center">
