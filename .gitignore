@@ -4,10 +4,6 @@ enigma2021.pdf
 # Vim swap files
 *.swp
 
-# Image/Video creation documents
-img/creation
-vid/creation
-
 .idea/
 *.iml
 *.iws
