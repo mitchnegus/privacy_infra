@@ -11,8 +11,8 @@
  ******************************************/
 
 .reveal-viewport {
-	background: url('../img/enigma/enigma-background.png');
-	background-size: cover;
+	/*background: url('../img/enigma/enigma-background.png');
+	background-size: cover;*/
 }
 
 .enigma.reveal h1,
@@ -143,7 +143,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: #14A7A9;
+	color: #1F222C;
 	opacity: 0.2;
 }
 
@@ -368,7 +368,7 @@
 }
 
 .big-questions .highlight {
-	color: #14A7A9;
+	color: #2D3FF5;
 	font-weight: bold;
 }
 
